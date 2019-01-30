@@ -32,9 +32,15 @@
         <file alias="rightMenuBar">Images/rightHomeBar.png</file>
     </qresource>
     <qresource prefix="/Preview">
-        <file alias="cancerEtADN">Images/Presentations/CancerEtADN.png</file>
+        <file alias="partie I">Images/Presentations/Partie I.png</file>
+        <file alias="partie II">Images/Presentations/Partie II.png</file>
+        <file alias="partie III">Images/Presentations/Partie III.png</file>
+        <file alias="partie IV">Images/Presentations/Partie IV.png</file>
     </qresource>
     <qresource prefix="/Complement">
         <file alias="template">Images/Notes/Template.png</file>
+        <file alias="Note I">Images/Notes/Note I.png</file>
+        <file alias="Note II">Images/Notes/Note II.png</file>
+        <file alias="Note III">Images/Notes/Note III.png</file>
     </qresource>
 </RCC>

@@ -364,7 +364,7 @@
    <item>
     <widget class="QStackedWidget" name="StackedView">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="Page1">
       <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -665,7 +665,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Preview/cancerEtADN</pixmap>
+            <pixmap resource="ressources.qrc">:/Preview/partie I</pixmap>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -870,7 +870,7 @@
                 <x>0</x>
                 <y>0</y>
                 <width>1184</width>
-                <height>500</height>
+                <height>1700</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -895,7 +895,7 @@
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="ressources.qrc">:/Complement/template</pixmap>
+                  <pixmap resource="ressources.qrc">:/Complement/Note III</pixmap>
                  </property>
                 </widget>
                </item>
