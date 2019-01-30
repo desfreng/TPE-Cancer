@@ -24,9 +24,12 @@
         <file alias="next">Images/next.png</file>
         <file alias="prev">Images/prev.png</file>
         <file alias="midBar">Images/midBar.png</file>
-        <file alias="horizontalBar">Images/horizontalBar.png</file>
-        <file alias="leftBarNote">Images/leftBarNote.png</file>
-        <file alias="rightBarNote">Images/rightBarNotes.png</file>
+        <file alias="horizontalNoteBar">Images/horizontalBar.png</file>
+        <file alias="leftNoteBar">Images/leftBarNote.png</file>
+        <file alias="rightNoteBar">Images/rightBarNotes.png</file>
+        <file alias="horizontalMenuBar">Images/horizontalBarMenu.png</file>
+        <file alias="leftMenuBar">Images/leftHomeBar.png</file>
+        <file alias="rightMenuBar">Images/rightHomeBar.png</file>
     </qresource>
     <qresource prefix="/Preview">
         <file alias="cancerEtADN">Images/Presentations/CancerEtADN.png</file>
