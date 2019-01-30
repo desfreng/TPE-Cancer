@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/ButInactive">
+        <file alias="info_In">Images/Inactive/Inactive-1.png</file>
+        <file alias="sources_In">Images/Inactive/Inactive-2.png</file>
+        <file alias="conclu-Act">Images/Inactive/Inactive-3.png</file>
+        <file alias="p4_In">Images/Inactive/Inactive-4.png</file>
+        <file alias="p3_In">Images/Inactive/Inactive-5.png</file>
+        <file alias="p2_In">Images/Inactive/Inactive-6.png</file>
+        <file alias="p1_In">Images/Inactive/Inactive-7.png</file>
+        <file alias="intro_In">Images/Inactive/Inactive-8.png</file>
+    </qresource>
+    <qresource prefix="/ButActive">
+        <file alias="info_Act">Images/Active/Active-1.png</file>
+        <file alias="sources_Act">Images/Active/Active-2.png</file>
+        <file alias="conclu_Act">Images/Active/Active-3.png</file>
+        <file alias="p4_Act">Images/Active/Active-4.png</file>
+        <file alias="p3_Act">Images/Active/Active-5.png</file>
+        <file alias="p2_Act">Images/Active/Active-6.png</file>
+        <file alias="p1_Act">Images/Active/Active-7.png</file>
+        <file alias="intro_Act">Images/Active/Active-8.png</file>
+    </qresource>
+    <qresource prefix="/Others">
+        <file alias="title">Images/titre.png</file>
+        <file alias="next">Images/next.png</file>
+        <file alias="prev">Images/prev.png</file>
+        <file alias="midBar">Images/midBar.png</file>
+    </qresource>
+</RCC>

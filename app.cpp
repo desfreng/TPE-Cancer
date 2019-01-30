@@ -4,11 +4,11 @@
 App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
 {
     ui->setupUi (this);
-//    showFullScreen();
+    //    showFullScreen();
     
     QPalette pal = palette();
     
-    pal.setColor (QPalette::Background, QColor (0, 81, 124));
+    pal.setColor (QPalette::Background, QColor (207, 226, 243));
     setAutoFillBackground (true);
     setPalette (pal);
 }
