@@ -24,5 +24,14 @@
         <file alias="next">Images/next.png</file>
         <file alias="prev">Images/prev.png</file>
         <file alias="midBar">Images/midBar.png</file>
+        <file alias="horizontalBar">Images/horizontalBar.png</file>
+        <file alias="leftBarNote">Images/leftBarNote.png</file>
+        <file alias="rightBarNote">Images/rightBarNotes.png</file>
+    </qresource>
+    <qresource prefix="/Preview">
+        <file alias="cancerEtADN">Images/Presentations/CancerEtADN.png</file>
+    </qresource>
+    <qresource prefix="/Complement">
+        <file alias="template">Images/Notes/Template.png</file>
     </qresource>
 </RCC>
