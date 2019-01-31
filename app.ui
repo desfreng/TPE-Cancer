@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1400</width>
-    <height>870</height>
+    <width>1336</width>
+    <height>751</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -20,6 +20,21 @@
    <string>App</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
    <item>
     <layout class="QHBoxLayout" name="HeaderLayout">
      <property name="spacing">
@@ -419,13 +434,13 @@
            <property name="minimumSize">
             <size>
              <width>5</width>
-             <height>710</height>
+             <height>560</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>5</width>
-             <height>710</height>
+             <height>560</height>
             </size>
            </property>
            <property name="pixmap">
@@ -465,13 +480,13 @@
              <property name="minimumSize">
               <size>
                <width>1200</width>
-               <height>700</height>
+               <height>550</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>1200</width>
-               <height>700</height>
+               <height>550</height>
               </size>
              </property>
              <property name="frameShape">
@@ -485,8 +500,8 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>1200</width>
-                <height>700</height>
+                <width>1186</width>
+                <height>780</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -508,7 +523,10 @@
                <item>
                 <widget class="QLabel" name="TextHomeLabel">
                  <property name="text">
-                  <string>Image Here</string>
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="ressources.qrc">:/Text/info</pixmap>
                  </property>
                 </widget>
                </item>
@@ -542,13 +560,13 @@
            <property name="minimumSize">
             <size>
              <width>5</width>
-             <height>710</height>
+             <height>560</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>5</width>
-             <height>710</height>
+             <height>560</height>
             </size>
            </property>
            <property name="pixmap">
@@ -626,13 +644,13 @@
            <property name="minimumSize">
             <size>
              <width>200</width>
-             <height>380</height>
+             <height>300</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>200</width>
-             <height>380</height>
+             <height>300</height>
             </size>
            </property>
            <property name="text">
@@ -658,7 +676,13 @@
            <property name="minimumSize">
             <size>
              <width>850</width>
-             <height>380</height>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>300</height>
             </size>
            </property>
            <property name="text">
@@ -677,13 +701,13 @@
            <property name="minimumSize">
             <size>
              <width>200</width>
-             <height>380</height>
+             <height>300</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>200</width>
-             <height>380</height>
+             <height>300</height>
             </size>
            </property>
            <property name="text">
@@ -800,13 +824,13 @@
            <property name="minimumSize">
             <size>
              <width>5</width>
-             <height>310</height>
+             <height>290</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>5</width>
-             <height>310</height>
+             <height>290</height>
             </size>
            </property>
            <property name="text">
@@ -852,13 +876,13 @@
              <property name="minimumSize">
               <size>
                <width>1200</width>
-               <height>300</height>
+               <height>280</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>1200</width>
-               <height>300</height>
+               <height>280</height>
               </size>
              </property>
              <property name="widgetResizable">
@@ -932,13 +956,13 @@
            <property name="minimumSize">
             <size>
              <width>5</width>
-             <height>310</height>
+             <height>290</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>5</width>
-             <height>310</height>
+             <height>290</height>
             </size>
            </property>
            <property name="text">

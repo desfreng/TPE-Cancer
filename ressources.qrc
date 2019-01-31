@@ -43,4 +43,9 @@
         <file alias="Note II">Images/Notes/Note II.png</file>
         <file alias="Note III">Images/Notes/Note III.png</file>
     </qresource>
+    <qresource prefix="/Text">
+        <file alias="conclu">Images/Texte/Conclusion.png</file>
+        <file alias="info">Images/Texte/Informations.png</file>
+        <file alias="intro">Images/Texte/Introduction.png</file>
+    </qresource>
 </RCC>

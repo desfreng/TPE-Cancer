@@ -4,7 +4,7 @@
 App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
 {
     ui->setupUi (this);
-    //    showFullScreen();
+    showFullScreen();
     
     QPalette pal = palette();
     
@@ -14,6 +14,12 @@ App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
     
     pal.setColor (QPalette::Background, QColor (250, 250, 250));
     ui->scrollArea->setPalette (pal);
+    ui->HomeScrollArea->setPalette (pal);
+    
+    
+    
+    
+    
 }
 
 App::~App()
