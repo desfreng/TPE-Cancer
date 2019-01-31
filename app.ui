@@ -379,7 +379,7 @@
    <item>
     <widget class="QStackedWidget" name="StackedView">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="Page1">
       <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -689,7 +689,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Preview/partie I</pixmap>
+            <pixmap resource="ressources.qrc">:/Preview/partie II</pixmap>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
