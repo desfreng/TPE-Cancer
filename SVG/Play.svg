@@ -11,11 +11,14 @@
    viewBox="0 0 100 100"
    stroke-miterlimit="10"
    id="svg55"
-   sodipodi:docname="Partie III Test.svg"
+   sodipodi:docname="Play.svg"
    width="100"
    height="100"
    style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="/home/gabriel/Bureau/TPE-Cancer/Images/play.png"
+   inkscape:export-xdpi="288"
+   inkscape:export-ydpi="288">
   <metadata
      id="metadata61">
     <rdf:RDF>
@@ -24,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -47,9 +50,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="3.5805561"
-     inkscape:cx="135.16665"
-     inkscape:cy="86.985007"
+     inkscape:zoom="3.2550065"
+     inkscape:cx="7.3692828"
+     inkscape:cy="68.958079"
      inkscape:window-x="0"
      inkscape:window-y="42"
      inkscape:window-maximized="1"
@@ -63,7 +66,7 @@
        style="clip-rule:nonzero" />
   </clipPath>
   <circle
-     style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.47252297;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#000000;fill-opacity:0.23529412;stroke:none;stroke-width:1.47252297;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path918"
      cx="50"
      cy="50"

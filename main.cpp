@@ -1,9 +1,17 @@
 #include "app.h"
 #include <QApplication>
 
-int main(int argc, char *argv[])
+#include "images.h"
+
+QPixmap _2PM (QString image)
 {
-    QApplication a(argc, argv);
+    return QPixmap::fromImage (QImage (image));
+}
+
+int main (int argc, char* argv[])
+{
+    QApplication a (argc, argv);
+    
     App w;
     w.show();
     

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui multimedia multimediawidgets #webenginewidgets
+QT       += core gui multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,10 +26,15 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        app.cpp
+        app.cpp \
+    buttonoverlay.cpp \
+    butmanager.cpp
 
 HEADERS += \
-        app.h
+        app.h \
+    images.h \
+    buttonoverlay.h \
+    butmanager.h
 
 FORMS += \
         app.ui

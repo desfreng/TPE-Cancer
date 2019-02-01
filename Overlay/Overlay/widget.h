@@ -2,6 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QTimer>
+#include <QMessageBox>
 #include "buttonoverlay.h"
 
 namespace Ui {

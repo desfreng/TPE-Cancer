@@ -62,13 +62,13 @@
         <widget class="QPushButton" name="HomeBut">
          <property name="minimumSize">
           <size>
-           <width>810</width>
+           <width>710</width>
            <height>80</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>810</width>
+           <width>710</width>
            <height>80</height>
           </size>
          </property>
@@ -81,7 +81,7 @@
          </property>
          <property name="iconSize">
           <size>
-           <width>810</width>
+           <width>710</width>
            <height>80</height>
           </size>
          </property>
@@ -99,7 +99,7 @@
           <enum>QLayout::SetFixedSize</enum>
          </property>
          <property name="leftMargin">
-          <number>1</number>
+          <number>2</number>
          </property>
          <item>
           <widget class="QPushButton" name="IntroBut">
@@ -120,7 +120,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/intro_In</normaloff>:/ButInactive/intro_In</iconset>
+             <normaloff>:/ButtonEnable/intro_In</normaloff>:/ButtonEnable/intro_In</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -152,7 +152,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/p1_In</normaloff>:/ButInactive/p1_In</iconset>
+             <normaloff>:/ButtonEnable/p1_In</normaloff>:/ButtonEnable/p1_In</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -184,7 +184,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/p2_In</normaloff>:/ButInactive/p2_In</iconset>
+             <normaloff>:/ButtonEnable/p2_In</normaloff>:/ButtonEnable/p2_In</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -216,7 +216,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/p3_In</normaloff>:/ButInactive/p3_In</iconset>
+             <normaloff>:/ButtonEnable/p3_In</normaloff>:/ButtonEnable/p3_In</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -248,7 +248,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/p4_In</normaloff>:/ButInactive/p4_In</iconset>
+             <normaloff>:/ButtonEnable/p4_In</normaloff>:/ButtonEnable/p4_In</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -280,39 +280,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/conclu-Act</normaloff>:/ButInactive/conclu-Act</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>100</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="SourceBut">
-           <property name="minimumSize">
-            <size>
-             <width>100</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>100</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/sources_In</normaloff>:/ButInactive/sources_In</iconset>
+             <normaloff>:/ButtonEnable/conclu-Act</normaloff>:/ButtonEnable/conclu-Act</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -344,7 +312,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButInactive/info_In</normaloff>:/ButInactive/info_In</iconset>
+             <normaloff>:/ButtonEnable/info_In</normaloff>:/ButtonEnable/info_In</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -500,8 +468,8 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>1186</width>
-                <height>780</height>
+                <width>1200</width>
+                <height>550</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -894,7 +862,7 @@
                 <x>0</x>
                 <y>0</y>
                 <width>1184</width>
-                <height>1700</height>
+                <height>2260</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -914,7 +882,7 @@
                 <number>0</number>
                </property>
                <item>
-                <widget class="QLabel" name="label">
+                <widget class="QLabel" name="ComplementLabel">
                  <property name="text">
                   <string/>
                  </property>
