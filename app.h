@@ -6,10 +6,13 @@
 #include <QMouseEvent>
 #include <QTimer>
 #include <QScrollBar>
+#include <QMessageBox>
 
 #include "images.h"
 #include "butmanager.h"
 #include "buttonoverlay.h"
+
+#include "videoplayer.h"
 
 namespace Ui {
 class App;
@@ -21,13 +24,14 @@ class App : public QWidget
         
     public:
         enum Page {
-            Introduction = 0,
-            Partie1 = 1,
-            Partie2 = 2,
-            Partie3 = 3,
-            Partie4 = 4,
-            Conclusion = 5,
-            None = -1,
+            Home = 0,
+            Introduction = 1,
+            Partie1 = 2,
+            Partie2 = 3,
+            Partie3 = 4,
+            Partie4 = 5,
+            Conclusion = 6,
+            Information = 7,
         };
         enum OverlayBut {
             Gauche,
@@ -50,10 +54,14 @@ class App : public QWidget
         void NextPage();
         void PreviousPage();
         
+    protected slots:
+        void resetButton();
+        
     private:
         void updateOverlays();
-        void resetButton();
-        void launchVideo();
+        void initVideo();
+        
+        void launchVideo (ButManager::Module video);
         
         Page _current;
         OverlayBut _butCliked;
@@ -65,6 +73,8 @@ class App : public QWidget
         ButtonOverlay* overGauche;
         
         QTimer* cursorTimer;
+        
+        //        VideoPlayer* _videoPlayer;
 };
 
 #endif // APP_H

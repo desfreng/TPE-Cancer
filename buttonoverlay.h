@@ -4,6 +4,8 @@
 #include <QPushButton>
 #include <QWidget>
 #include <QPainter>
+#include <QMouseEvent>
+#include <QtMath>
 
 class ButtonOverlay : public QPushButton
 {
@@ -13,6 +15,7 @@ class ButtonOverlay : public QPushButton
         
     protected:
         void paintEvent (QPaintEvent*);
+        void mousePressEvent (QMouseEvent* event);
         
     private:
         QPixmap* _pixMap;

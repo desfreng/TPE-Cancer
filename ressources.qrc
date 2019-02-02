@@ -59,4 +59,8 @@
         <file alias="p1_forbid">Images/Impossible/g4787.png</file>
         <file alias="intro_forbid">Images/Impossible/g4797.png</file>
     </qresource>
+    <qresource prefix="/Icon">
+        <file alias="quitIcon">SVG/QuitIcon.svg</file>
+        <file alias="sonIcon">SVG/SonIcon.svg</file>
+    </qresource>
 </RCC>

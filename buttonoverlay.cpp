@@ -25,3 +25,13 @@ void ButtonOverlay::paintEvent (QPaintEvent*)
     
     painter.drawPixmap (rect(), *_pixMap);
 }
+
+void ButtonOverlay::mousePressEvent (QMouseEvent* event)
+{
+    QPoint Diff = event->pos() - rect().center();
+    int radius = width() / 2;
+    
+    if (qSqrt (Diff.x()*Diff.x() + Diff.y()*Diff.y()) <= radius) {
+        emit clicked();
+    }
+}

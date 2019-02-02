@@ -28,13 +28,15 @@ SOURCES += \
         main.cpp \
         app.cpp \
     buttonoverlay.cpp \
-    butmanager.cpp
+    butmanager.cpp \
+    videoplayer.cpp
 
 HEADERS += \
         app.h \
     images.h \
     buttonoverlay.h \
-    butmanager.h
+    butmanager.h \
+    videoplayer.h
 
 FORMS += \
         app.ui

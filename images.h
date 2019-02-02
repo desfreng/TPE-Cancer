@@ -59,6 +59,10 @@ const QString Information = ":/Text/info";
 const QString Introduction = ":/Text/intro";
 }
 
+namespace Icon {
+const QString Son = ":/Icon/sonIcon";
+const QString Quit = ":/Icon/quitIcon";
+}
 }
 
 #endif // IMAGES_H

@@ -15,8 +15,8 @@ class ButManager : public QObject
             CancerEtIons = 2,
             
             Partie2 = 3,
-            Radiotherapie = 4,
-            Chimiotherapie = 5,
+            Chimiotherapie = 4,
+            Radiotherapie = 5,
             
             Partie3 = 6,
             PourquoiIons = 7,
