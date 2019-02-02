@@ -15,11 +15,11 @@ App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
     
     _videoPlayer = new PlayVideo;
     
-    overDroite = new ButtonOverlay (Images::Play, this);
+    overDroite = new ButtonOverlay (Images::Icon::Play, this);
     overDroite->setFixedSize (125, 125);
     overDroite->setVisible (false);
     
-    overGauche = new ButtonOverlay (Images::Play, this);
+    overGauche = new ButtonOverlay (Images::Icon::Play, this);
     overGauche->setFixedSize (125, 125);
     overGauche->setVisible (false);
     
@@ -151,39 +151,39 @@ void App::updateOverlays()
 
 void App::resetButton()
 {
-    ui->IntroBut->setIcon (_2PM (Images::ButtonEnable::Introduction));
-    ui->InfoBut->setIcon (_2PM (Images::ButtonEnable::Information));
+    ui->IntroBut->setIcon (_2PM (Images::ButtonNormal::Introduction));
+    ui->InfoBut->setIcon (_2PM (Images::ButtonNormal::Information));
     
     if (manager->isEnable (ButManager::Partie1)) {
-        ui->P1But->setIcon (_2PM (Images::ButtonEnable::Partie1));
+        ui->P1But->setIcon (_2PM (Images::ButtonNormal::Partie1));
     }
     else {
         ui->P1But->setIcon (_2PM (Images::ButtonForbidden::Partie1));
     }
     
     if (manager->isEnable (ButManager::Partie2)) {
-        ui->P2But->setIcon (_2PM (Images::ButtonEnable::Partie2));
+        ui->P2But->setIcon (_2PM (Images::ButtonNormal::Partie2));
     }
     else {
         ui->P2But->setIcon (_2PM (Images::ButtonForbidden::Partie2));
     }
     
     if (manager->isEnable (ButManager::Partie3)) {
-        ui->P3But->setIcon (_2PM (Images::ButtonEnable::Partie3));
+        ui->P3But->setIcon (_2PM (Images::ButtonNormal::Partie3));
     }
     else {
         ui->P3But->setIcon (_2PM (Images::ButtonForbidden::Partie3));
     }
     
     if (manager->isEnable (ButManager::Partie4)) {
-        ui->P4But->setIcon (_2PM (Images::ButtonEnable::Partie4));
+        ui->P4But->setIcon (_2PM (Images::ButtonNormal::Partie4));
     }
     else {
         ui->P4But->setIcon (_2PM (Images::ButtonForbidden::Partie4));
     }
     
     if (manager->isEnable (ButManager::Conclusion)) {
-        ui->ConcluBut->setIcon (_2PM (Images::ButtonEnable::Conclusion));
+        ui->ConcluBut->setIcon (_2PM (Images::ButtonNormal::Conclusion));
     }
     else {
         ui->ConcluBut->setIcon (_2PM (Images::ButtonForbidden::Conclusion));
@@ -253,8 +253,8 @@ void App::Partie1Cliked()
         resetButton();
         
         ui->StackedView->setCurrentIndex (1);
-        ui->Text2Label->setPixmap (_2PM (Images::Preview::PartieI));
-        ui->ComplementLabel->setPixmap (_2PM (Images::Complements::NoteI));
+        ui->Text2Label->setPixmap (_2PM (Images::Affiche::Partie1));
+        ui->ComplementLabel->setPixmap (_2PM (Images::Complements::Note1));
         ui->scrollArea->verticalScrollBar()->setValue (0);
     }
     else {
@@ -271,8 +271,8 @@ void App::Partie2Cliked()
         resetButton();
         
         ui->StackedView->setCurrentIndex (1);
-        ui->Text2Label->setPixmap (_2PM (Images::Preview::PartieII));
-        ui->ComplementLabel->setPixmap (_2PM (Images::Complements::NoteII));
+        ui->Text2Label->setPixmap (_2PM (Images::Affiche::Partie2));
+        ui->ComplementLabel->setPixmap (_2PM (Images::Complements::Note2));
         ui->scrollArea->verticalScrollBar()->setValue (0);
     }
     else {
@@ -289,8 +289,8 @@ void App::Partie3Cliked()
         resetButton();
         
         ui->StackedView->setCurrentIndex (1);
-        ui->Text2Label->setPixmap (_2PM (Images::Preview::PartieIII));
-        ui->ComplementLabel->setPixmap (_2PM (Images::Complements::NoteIII));
+        ui->Text2Label->setPixmap (_2PM (Images::Affiche::Partie3));
+        ui->ComplementLabel->setPixmap (_2PM (Images::Complements::Note3));
         ui->scrollArea->verticalScrollBar()->setValue (0);
     }
     else {
@@ -307,7 +307,7 @@ void App::Partie4Cliked()
         resetButton();
         
         ui->StackedView->setCurrentIndex (1);
-        ui->Text2Label->setPixmap (_2PM (Images::Preview::PartieIV));
+        ui->Text2Label->setPixmap (_2PM (Images::Affiche::Partie4));
         ui->ComplementLabel->setPixmap (_2PM (Images::Complements::Vide));
         ui->scrollArea->verticalScrollBar()->setValue (0);
     }

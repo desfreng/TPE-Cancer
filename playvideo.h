@@ -5,11 +5,10 @@
 #include <QMediaPlayer>
 #include <QTimer>
 
-#include <QtDebug>
-
-#include "buttonoverlay.h"
 #include "medias.h"
-#include "sondialog.h"
+
+#include "Class/buttonoverlay.h"
+#include "Class/sondialog.h"
 
 namespace Ui {
 class PlayVideo;

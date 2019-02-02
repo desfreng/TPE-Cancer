@@ -77,7 +77,7 @@
          </property>
          <property name="icon">
           <iconset resource="ressources.qrc">
-           <normaloff>:/Others/title</normaloff>:/Others/title</iconset>
+           <normaloff>:/AppImages/titre</normaloff>:/AppImages/titre</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -120,7 +120,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButtonEnable/intro_In</normaloff>:/ButtonEnable/intro_In</iconset>
+             <normaloff>:/ButtonNormal/introduction</normaloff>:/ButtonNormal/introduction</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -152,7 +152,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButtonEnable/p1_In</normaloff>:/ButtonEnable/p1_In</iconset>
+             <normaloff>:/ButtonNormal/partie1</normaloff>:/ButtonNormal/partie1</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -184,7 +184,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButtonEnable/p2_In</normaloff>:/ButtonEnable/p2_In</iconset>
+             <normaloff>:/ButtonNormal/partie2</normaloff>:/ButtonNormal/partie2</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -216,7 +216,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButtonEnable/p3_In</normaloff>:/ButtonEnable/p3_In</iconset>
+             <normaloff>:/ButtonNormal/partie3</normaloff>:/ButtonNormal/partie3</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -248,7 +248,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButtonEnable/p4_In</normaloff>:/ButtonEnable/p4_In</iconset>
+             <normaloff>:/ButtonNormal/partie4</normaloff>:/ButtonNormal/partie4</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -280,7 +280,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButtonEnable/conclu-Act</normaloff>:/ButtonEnable/conclu-Act</iconset>
+             <normaloff>:/ButtonNormal/conclusion</normaloff>:/ButtonNormal/conclusion</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -312,7 +312,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/ButtonEnable/info_In</normaloff>:/ButtonEnable/info_In</iconset>
+             <normaloff>:/ButtonNormal/information</normaloff>:/ButtonNormal/information</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -347,7 +347,7 @@
    <item>
     <widget class="QStackedWidget" name="StackedView">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="Page1">
       <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -412,7 +412,7 @@
             </size>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Others/leftMenuBar</pixmap>
+            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
            </property>
           </widget>
          </item>
@@ -439,7 +439,7 @@
               </size>
              </property>
              <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Others/horizontalMenuBar</pixmap>
+              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
              </property>
             </widget>
            </item>
@@ -469,7 +469,7 @@
                 <x>0</x>
                 <y>0</y>
                 <width>1186</width>
-                <height>790</height>
+                <height>700</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -494,7 +494,7 @@
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="ressources.qrc">:/Text/info</pixmap>
+                  <pixmap resource="ressources.qrc">:/Textes/introduction</pixmap>
                  </property>
                 </widget>
                </item>
@@ -517,7 +517,7 @@
               </size>
              </property>
              <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Others/horizontalMenuBar</pixmap>
+              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
              </property>
             </widget>
            </item>
@@ -538,7 +538,7 @@
             </size>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Others/rightMenuBar</pixmap>
+            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
            </property>
           </widget>
          </item>
@@ -626,7 +626,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/Others/prev</normaloff>:/Others/prev</iconset>
+             <normaloff>:/AppImages/prev</normaloff>:/AppImages/prev</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -657,7 +657,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Preview/partie II</pixmap>
+            <pixmap resource="ressources.qrc">:/Affiches/partie1</pixmap>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -683,7 +683,7 @@
            </property>
            <property name="icon">
             <iconset resource="ressources.qrc">
-             <normaloff>:/Others/next</normaloff>:/Others/next</iconset>
+             <normaloff>:/AppImages/next</normaloff>:/AppImages/next</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -747,7 +747,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Others/midBar</pixmap>
+            <pixmap>:/Others/midBar</pixmap>
            </property>
           </widget>
          </item>
@@ -805,7 +805,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Others/leftNoteBar</pixmap>
+            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
            </property>
           </widget>
          </item>
@@ -835,7 +835,7 @@
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Others/horizontalNoteBar</pixmap>
+              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
              </property>
             </widget>
            </item>
@@ -860,9 +860,9 @@
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>0</y>
+                <y>-120</y>
                 <width>1184</width>
-                <height>2260</height>
+                <height>1720</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -887,7 +887,7 @@
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="ressources.qrc">:/Complement/Note III</pixmap>
+                  <pixmap resource="ressources.qrc">:/Complement/note1</pixmap>
                  </property>
                 </widget>
                </item>
@@ -913,7 +913,7 @@
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Others/horizontalNoteBar</pixmap>
+              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
              </property>
             </widget>
            </item>
@@ -937,7 +937,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Others/rightNoteBar</pixmap>
+            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
            </property>
           </widget>
          </item>

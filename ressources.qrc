@@ -1,39 +1,62 @@
 <RCC>
-    <qresource prefix="/ButtonEnable">
+    <qresource prefix="/ButtonNormal">
+        <file alias="conclusion">Images/Buttons/Normal/Conclusion.svg</file>
+        <file alias="information">Images/Buttons/Normal/Information.svg</file>
+        <file alias="introduction">Images/Buttons/Normal/Introduction.svg</file>
+        <file alias="partie1">Images/Buttons/Normal/Partie1.svg</file>
+        <file alias="partie2">Images/Buttons/Normal/Partie2.svg</file>
+        <file alias="partie3">Images/Buttons/Normal/Partie3.svg</file>
+        <file alias="partie4">Images/Buttons/Normal/Partie4.svg</file>
     </qresource>
-    <qresource prefix="/ButtonCliked">
+    <qresource prefix="/ButtonClicked">
+        <file alias="conclusion">Images/Buttons/Cliked/Conclusion.svg</file>
+        <file alias="information">Images/Buttons/Cliked/Information.svg</file>
+        <file alias="introduction">Images/Buttons/Cliked/Introduction.svg</file>
+        <file alias="partie1">Images/Buttons/Cliked/Partie1.svg</file>
+        <file alias="partie2">Images/Buttons/Cliked/Partie2.svg</file>
+        <file alias="partie3">Images/Buttons/Cliked/Partie3.svg</file>
+        <file alias="partie4">Images/Buttons/Cliked/Partie4.svg</file>
     </qresource>
     <qresource prefix="/ButtonForbidden">
-</qresource>
-
-
-    <qresource prefix="/AppImages">
-
+        <file alias="conclusion">Images/Buttons/Forbidden/Conclusion.svg</file>
+        <file alias="information">Images/Buttons/Forbidden/Information.svg</file>
+        <file alias="introduction">Images/Buttons/Forbidden/Introduction.svg</file>
+        <file alias="partie1">Images/Buttons/Forbidden/Partie1.svg</file>
+        <file alias="partie2">Images/Buttons/Forbidden/Partie2.svg</file>
+        <file alias="partie3">Images/Buttons/Forbidden/Partie3.svg</file>
+        <file alias="partie4">Images/Buttons/Forbidden/Partie4.svg</file>
     </qresource>
-    
-<qresource prefix="/Affiches">
-</qresource>
-<qresource prefix="/Complement">
-</qresource>
-<qresource prefix="/Textes">
-</qresource>
-
-<qresource prefix="/Icon">
-    <file alias="quitIcon">SVG/QuitIcon.svg</file>
-    <file alias="sonIcon">SVG/SonIcon.svg</file>
-    <file alias="play">SVG/Play.svg</file>
-    <file alias="pauseVideo">SVG/Pause.svg</file>
-    <file alias="playVideo">SVG/PlayButton.svg</file>
-</qresource>
-
-
+    <qresource prefix="/AppImages">
+        <file alias="next">Images/AppImages/Next.svg</file>
+        <file alias="prev">Images/AppImages/Prev.svg</file>
+        <file alias="titre">Images/AppImages/Titre.svg</file>
+    </qresource>
+    <qresource prefix="/Affiches">
+        <file alias="partie1">Images/Affiches/Partie I.svg</file>
+        <file alias="partie2">Images/Affiches/Partie II.svg</file>
+        <file alias="partie3">Images/Affiches/Partie III.svg</file>
+        <file alias="partie4">Images/Affiches/Partie IV.svg</file>
+    </qresource>
+    <qresource prefix="/Complement">
+        <file alias="note1">Images/Complements/Note I.svg</file>
+        <file alias="note2">Images/Complements/Note II.svg</file>
+        <file alias="note3">Images/Complements/Note III.svg</file>
+        <file alias="emptynote">Images/Complements/Template.svg</file>
+    </qresource>
+    <qresource prefix="/Textes">
+        <file alias="conclusion">Images/Texte/Conclusion.svg</file>
+        <file alias="information">Images/Texte/Informations.svg</file>
+        <file alias="introduction">Images/Texte/Introduction.svg</file>
+    </qresource>
+    <qresource prefix="/Icon">
+        <file alias="videopause">Images/Icons/PauseVideo.svg</file>
+        <file alias="imageplay">Images/Icons/PlayImage.svg</file>
+        <file alias="videoplay">Images/Icons/PlayVideo.svg</file>
+        <file alias="iconquit">Images/Icons/QuitIcon.svg</file>
+        <file alias="iconson">Images/Icons/SonIcon.svg</file>
+    </qresource>
     <qresource prefix="/Misc">
-        <file alias="midBar">Images/midBar.png</file>
-        <file alias="horizontalNoteBar">Images/horizontalBar.png</file>
-        <file alias="leftNoteBar">Images/leftBarNote.png</file>
-        <file alias="rightNoteBar">Images/rightBarNotes.png</file>
-        <file alias="horizontalMenuBar">Images/horizontalBarMenu.png</file>
-        <file alias="leftMenuBar">Images/leftHomeBar.png</file>
-        <file alias="rightMenuBar">Images/rightHomeBar.png</file>
+        <file alias="horizontalbar">Images/Misc/horizontalBar.png</file>
+        <file alias="verticalbar">Images/Misc/verticalBar.png</file>
     </qresource>
 </RCC>

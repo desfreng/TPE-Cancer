@@ -106,7 +106,7 @@
          </property>
          <property name="icon">
           <iconset resource="ressources.qrc">
-           <normaloff>:/Icon/playBut</normaloff>:/Icon/playBut</iconset>
+           <normaloff>:/Icon/videoplay</normaloff>:/Icon/videoplay</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -135,7 +135,7 @@
          </property>
          <property name="icon">
           <iconset resource="ressources.qrc">
-           <normaloff>:/Icon/sonIcon</normaloff>:/Icon/sonIcon</iconset>
+           <normaloff>:/Icon/iconson</normaloff>:/Icon/iconson</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -183,7 +183,7 @@
          </property>
          <property name="icon">
           <iconset resource="ressources.qrc">
-           <normaloff>:/Icon/quitIcon</normaloff>:/Icon/quitIcon</iconset>
+           <normaloff>:/Icon/iconquit</normaloff>:/Icon/iconquit</iconset>
          </property>
          <property name="iconSize">
           <size>

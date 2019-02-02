@@ -41,7 +41,7 @@ PlayVideo::PlayVideo (QWidget* parent) : QWidget (parent), _forceClose (false), 
         if (_player->state() == QMediaPlayer::PlayingState)
         {
             _player->pause();
-            ui->playBut->setIcon (_2PM (Images::PlayButton));
+            ui->playBut->setIcon (_2PM (Images::Icon::VideoPlay));
             
             setCursor (Qt::ArrowCursor);
             ui->stackedWidget->setCurrentIndex (1);
@@ -68,7 +68,7 @@ void PlayVideo::OpenMedia (QString location)
     _player->setVolume (50);
     _player->play();
     
-    ui->playBut->setIcon (_2PM (Images::Pause));
+    ui->playBut->setIcon (_2PM (Images::Icon::VideoPause));
 }
 
 PlayVideo::~PlayVideo()
@@ -135,13 +135,13 @@ void PlayVideo::tooglePausePlay()
     switch (_player->state()) {
         case QMediaPlayer::PlayingState:
             _player->pause();
-            ui->playBut->setIcon (_2PM (Images::PlayButton));
+            ui->playBut->setIcon (_2PM (Images::Icon::VideoPlay));
             break;
             
         case QMediaPlayer::StoppedState:
         case QMediaPlayer::PausedState:
             _player->play();
-            ui->playBut->setIcon (_2PM (Images::Pause));
+            ui->playBut->setIcon (_2PM (Images::Icon::VideoPause));
             setCursor (Qt::ArrowCursor);
             ui->stackedWidget->setCurrentIndex (1);
             break;

@@ -27,22 +27,22 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         app.cpp \
-    buttonoverlay.cpp \
-    butmanager.cpp \
-    playvideo.cpp \
-    sondialog.cpp
+        playvideo.cpp \
+        Class/butmanager.cpp \
+        Class/buttonoverlay.cpp \
+        Class/sondialog.cpp
 
 HEADERS += \
         app.h \
-    buttonoverlay.h \
-    butmanager.h \
-    playvideo.h \
-    sondialog.h \
-    medias.h
+        playvideo.h \
+        medias.h \
+        Class/butmanager.h \
+        Class/buttonoverlay.h \
+        Class/sondialog.h
 
 FORMS += \
         app.ui \
-    playvideo.ui
+        playvideo.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -50,4 +50,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    ressources.qrc
+        ressources.qrc

@@ -9,8 +9,8 @@
 #include <QMessageBox>
 
 #include "medias.h"
-#include "butmanager.h"
-#include "buttonoverlay.h"
+#include "Class/butmanager.h"
+#include "Class/buttonoverlay.h"
 #include "playvideo.h"
 
 namespace Ui {
