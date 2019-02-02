@@ -29,17 +29,20 @@ SOURCES += \
         app.cpp \
     buttonoverlay.cpp \
     butmanager.cpp \
-    videoplayer.cpp
+    playvideo.cpp \
+    sondialog.cpp
 
 HEADERS += \
         app.h \
-    images.h \
     buttonoverlay.h \
     butmanager.h \
-    videoplayer.h
+    playvideo.h \
+    sondialog.h \
+    medias.h
 
 FORMS += \
-        app.ui
+        app.ui \
+    playvideo.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

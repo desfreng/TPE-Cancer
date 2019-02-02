@@ -1,28 +1,33 @@
 <RCC>
     <qresource prefix="/ButtonEnable">
-        <file alias="info_In">Images/Inactive/Inactive-1.png</file>
-        <file alias="sources_In">Images/Inactive/Inactive-2.png</file>
-        <file alias="conclu-Act">Images/Inactive/Inactive-3.png</file>
-        <file alias="p4_In">Images/Inactive/Inactive-4.png</file>
-        <file alias="p3_In">Images/Inactive/Inactive-5.png</file>
-        <file alias="p2_In">Images/Inactive/Inactive-6.png</file>
-        <file alias="p1_In">Images/Inactive/Inactive-7.png</file>
-        <file alias="intro_In">Images/Inactive/Inactive-8.png</file>
     </qresource>
     <qresource prefix="/ButtonCliked">
-        <file alias="intro_Act">Images/Active/Active-1.png</file>
-        <file alias="p1_Act">Images/Active/Active-2.png</file>
-        <file alias="p2_Act">Images/Active/Active-3.png</file>
-        <file alias="p3_Act">Images/Active/Active-4.png</file>
-        <file alias="p4_Act">Images/Active/Active-5.png</file>
-        <file alias="conclu_Act">Images/Active/Active-6.png</file>
-        <file alias="sources_Act">Images/Active/Active-7.png</file>
-        <file alias="info_Act">Images/Active/Active-8.png</file>
     </qresource>
-    <qresource prefix="/Others">
-        <file alias="title">Images/titre.png</file>
-        <file alias="next">Images/next.png</file>
-        <file alias="prev">Images/prev.png</file>
+    <qresource prefix="/ButtonForbidden">
+</qresource>
+
+
+    <qresource prefix="/AppImages">
+
+    </qresource>
+    
+<qresource prefix="/Affiches">
+</qresource>
+<qresource prefix="/Complement">
+</qresource>
+<qresource prefix="/Textes">
+</qresource>
+
+<qresource prefix="/Icon">
+    <file alias="quitIcon">SVG/QuitIcon.svg</file>
+    <file alias="sonIcon">SVG/SonIcon.svg</file>
+    <file alias="play">SVG/Play.svg</file>
+    <file alias="pauseVideo">SVG/Pause.svg</file>
+    <file alias="playVideo">SVG/PlayButton.svg</file>
+</qresource>
+
+
+    <qresource prefix="/Misc">
         <file alias="midBar">Images/midBar.png</file>
         <file alias="horizontalNoteBar">Images/horizontalBar.png</file>
         <file alias="leftNoteBar">Images/leftBarNote.png</file>
@@ -30,37 +35,5 @@
         <file alias="horizontalMenuBar">Images/horizontalBarMenu.png</file>
         <file alias="leftMenuBar">Images/leftHomeBar.png</file>
         <file alias="rightMenuBar">Images/rightHomeBar.png</file>
-        <file alias="play">Images/play.png</file>
-    </qresource>
-    <qresource prefix="/Preview">
-        <file alias="partie I">Images/Presentations/Partie I.png</file>
-        <file alias="partie II">Images/Presentations/Partie II.png</file>
-        <file alias="partie III">Images/Presentations/Partie III.png</file>
-        <file alias="partie IV">Images/Presentations/Partie IV.png</file>
-    </qresource>
-    <qresource prefix="/Complement">
-        <file alias="Vide">Images/Notes/Template.png</file>
-        <file alias="Note I">Images/Notes/Note I.png</file>
-        <file alias="Note II">Images/Notes/Note II.png</file>
-        <file alias="Note III">Images/Notes/Note III.png</file>
-    </qresource>
-    <qresource prefix="/Text">
-        <file alias="conclu">Images/Texte/Conclusion.png</file>
-        <file alias="info">Images/Texte/Informations.png</file>
-        <file alias="intro">Images/Texte/Introduction.png</file>
-    </qresource>
-    <qresource prefix="/ButtonForbidden">
-        <file alias="info_forbid">Images/Impossible/g4751.png</file>
-        <file alias="source_forbid">Images/Impossible/g4756.png</file>
-        <file alias="conclu_forbid">Images/Impossible/g4761.png</file>
-        <file alias="p4_forbid">Images/Impossible/g4772.png</file>
-        <file alias="p3_forbid">Images/Impossible/g4777.png</file>
-        <file alias="p2_forbid">Images/Impossible/g4782.png</file>
-        <file alias="p1_forbid">Images/Impossible/g4787.png</file>
-        <file alias="intro_forbid">Images/Impossible/g4797.png</file>
-    </qresource>
-    <qresource prefix="/Icon">
-        <file alias="quitIcon">SVG/QuitIcon.svg</file>
-        <file alias="sonIcon">SVG/SonIcon.svg</file>
     </qresource>
 </RCC>

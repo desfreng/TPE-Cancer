@@ -1,9 +1,7 @@
 #include "app.h"
-#include "videoplayer.h"
-
 #include <QApplication>
 
-#include "images.h"
+#include "medias.h"
 
 QPixmap _2PM (QString image)
 {
@@ -14,11 +12,8 @@ int main (int argc, char* argv[])
 {
     QApplication a (argc, argv);
     
-    //    App w;
-    //    w.show();
-    
-    VideoPlayer p;
-    p.show();
+    App w;
+    w.show();
     
     return a.exec();
 }

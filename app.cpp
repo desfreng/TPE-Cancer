@@ -3,15 +3,17 @@
 
 App::~App()
 {
-    //    delete _videoPlayer;
+    _videoPlayer->forceClose();
+    delete _videoPlayer;
     delete ui;
     delete manager;
 }
 
 App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
 {
-
     ui->setupUi (this);
+    
+    _videoPlayer = new PlayVideo;
     
     overDroite = new ButtonOverlay (Images::Play, this);
     overDroite->setFixedSize (125, 125);
@@ -62,6 +64,11 @@ App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
     manager = new ButManager (this);
     connect (manager, &ButManager::needUpdate, this, &App::resetButton);
     
+    connect (_videoPlayer, &PlayVideo::MediaEnd, [ = ] {
+        show();
+        showFullScreen();
+    });
+    
     homeCliked();
 }
 
@@ -84,7 +91,7 @@ void App::updateOverlays()
         case Page::Partie1:
             if (MiddleLabelRect.contains (cursorpos)) {
                 overGauche->move (RectPos + QPoint (425 - overGauche->width() / 2, 150 - overGauche->height() / 2));
-                overGauche->setVisible (manager->isEnable (ButManager::CancerEtIons));
+                overGauche->setVisible (manager->isEnable (ButManager::CancerEtAdn));
             }
             
             break;
@@ -401,9 +408,9 @@ void App::initVideo()
             return;
             
         case Page::Partie1:
-            if (manager->isEnable (ButManager::CancerEtIons)) {
-                manager->validate (ButManager::CancerEtIons);
-                launchVideo (ButManager::CancerEtIons);
+            if (manager->isEnable (ButManager::CancerEtAdn)) {
+                manager->validate (ButManager::CancerEtAdn);
+                launchVideo (ButManager::CancerEtAdn);
             }
             else {
                 QMessageBox::information (this, tr ("Video non accessible"), tr ("Cette video n'est pas encore accessible. Essayez de consulter les parties et videos précedentes pour débloquer celle-ci !"));
@@ -492,27 +499,35 @@ void App::initVideo()
 
 void App::launchVideo (ButManager::Module video)
 {
-    switch (video) {
+    hide();
     
-        case ButManager::CancerEtIons:
+    switch (video) {
+        case ButManager::CancerEtAdn:
+            _videoPlayer->OpenMedia (Videos::CancerEtAdn);
             break;
             
         case ButManager::Chimiotherapie:
+            _videoPlayer->OpenMedia (Videos::Chimiotherapie);
             break;
             
         case ButManager::Radiotherapie:
+            _videoPlayer->OpenMedia (Videos::Radiotherapie);
             break;
             
         case ButManager::PourquoiIons:
+            _videoPlayer->OpenMedia (Videos::PourquoiIons);
             break;
             
         case ButManager::ProductionParticules:
+            _videoPlayer->OpenMedia (Videos::PorductionParticule);
             break;
             
         case ButManager::Experience:
+            _videoPlayer->OpenMedia (Videos::Experience);
             break;
             
         case ButManager::Differences:
+            _videoPlayer->OpenMedia (Videos::Differences);
             break;
             
         default:

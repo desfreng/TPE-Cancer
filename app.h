@@ -8,11 +8,10 @@
 #include <QScrollBar>
 #include <QMessageBox>
 
-#include "images.h"
+#include "medias.h"
 #include "butmanager.h"
 #include "buttonoverlay.h"
-
-#include "videoplayer.h"
+#include "playvideo.h"
 
 namespace Ui {
 class App;
@@ -74,7 +73,7 @@ class App : public QWidget
         
         QTimer* cursorTimer;
         
-        //        VideoPlayer* _videoPlayer;
+        PlayVideo* _videoPlayer;
 };
 
 #endif // APP_H
