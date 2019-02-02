@@ -11,7 +11,7 @@
    viewBox="0 0 500 500"
    stroke-miterlimit="10"
    id="svg55"
-   sodipodi:docname="Play.svg"
+   sodipodi:docname="PlayImage.svg"
    width="500"
    height="500"
    style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
@@ -50,8 +50,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.95106382"
-     inkscape:cx="198.47121"
+     inkscape:zoom="3.0500914"
+     inkscape:cx="117.3261"
      inkscape:cy="242.16902"
      inkscape:window-x="0"
      inkscape:window-y="42"
@@ -66,7 +66,7 @@
        style="clip-rule:nonzero" />
   </clipPath>
   <circle
-     style="fill:#000000;fill-opacity:0.11764706;stroke:none;stroke-width:0.86871463;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#000000;fill-opacity:0.15686275;stroke:none;stroke-width:0.86871463;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
      id="path817"
      cx="250"
      cy="249.99998"
