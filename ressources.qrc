@@ -7,6 +7,7 @@
         <file alias="partie2">Images/Buttons/Normal/Partie2.svg</file>
         <file alias="partie3">Images/Buttons/Normal/Partie3.svg</file>
         <file alias="partie4">Images/Buttons/Normal/Partie4.svg</file>
+        <file alias="quitter">Images/Buttons/Quitter.svg</file>
     </qresource>
     <qresource prefix="/ButtonClicked">
         <file alias="conclusion">Images/Buttons/Cliked/Conclusion.svg</file>
@@ -47,6 +48,7 @@
         <file alias="conclusion">Images/Texte/Conclusion.svg</file>
         <file alias="information">Images/Texte/Informations.svg</file>
         <file alias="introduction">Images/Texte/Introduction.svg</file>
+        <file alias="bienvenue">Images/Texte/Bienvenue.svg</file>
     </qresource>
     <qresource prefix="/Icon">
         <file alias="videopause">Images/Icons/PauseVideo.svg</file>

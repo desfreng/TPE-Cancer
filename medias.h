@@ -55,6 +55,7 @@ namespace Texte {
 const QString Conclusion = ":/Textes/conclusion";
 const QString Information = ":/Textes/information";
 const QString Introduction = ":/Textes/introduction";
+const QString Bienvenue = ":/Textes/bienvenue";
 }
 
 namespace Icon {

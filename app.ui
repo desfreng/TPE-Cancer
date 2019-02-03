@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1354</width>
-    <height>871</height>
+    <height>767</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -40,6 +40,22 @@
      <property name="spacing">
       <number>1</number>
      </property>
+     <item>
+      <spacer name="HeaderSpacer2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>100</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
      <item>
       <spacer name="HeaderSpacer1">
        <property name="orientation">
@@ -330,7 +346,7 @@
       </layout>
      </item>
      <item>
-      <spacer name="HeaderSpacer2">
+      <spacer name="horizontalSpacer">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -342,10 +358,71 @@
        </property>
       </spacer>
      </item>
+     <item>
+      <layout class="QVBoxLayout" name="QuitLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="QuitButton">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/ButtonNormal/quitter</normaloff>:/ButtonNormal/quitter</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>100</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>82</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
     </layout>
    </item>
    <item>
     <widget class="QStackedWidget" name="StackedView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>10</horstretch>
+       <verstretch>10</verstretch>
+      </sizepolicy>
+     </property>
      <property name="currentIndex">
       <number>1</number>
      </property>
@@ -391,7 +468,7 @@
             <widget class="QScrollArea" name="HomeScrollArea">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-               <horstretch>0</horstretch>
+               <horstretch>1</horstretch>
                <verstretch>1</verstretch>
               </sizepolicy>
              </property>
@@ -473,7 +550,7 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>1186</width>
+                <width>1150</width>
                 <height>700</height>
                </rect>
               </property>

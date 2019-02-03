@@ -43,6 +43,7 @@ App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
     connect (ui->P4But, &QPushButton::clicked, this, &App::Partie4Cliked);
     connect (ui->ConcluBut, &QPushButton::clicked, this, &App::conclusionCliked);
     connect (ui->InfoBut, &QPushButton::clicked, this, &App::informationCliked);
+    connect (ui->QuitButton, &QPushButton::clicked, this, &App::close);
     
     connect (ui->NextBut, &QPushButton::clicked, this, &App::NextPage);
     connect (ui->PrevBut, &QPushButton::clicked, this, &App::PreviousPage);
@@ -258,16 +259,20 @@ void App::homeCliked()
 {
     _current = Page::Home;
     
+    ui->HomeScrollArea->verticalScrollBar()->setValue (0);
+    
     resetButton();
     
     ui->StackedView->setCurrentIndex (0);
-    ui->TextHomeLabel->setPixmap (_2PM ("")/*TODO: Make Home Page*/);
+    ui->TextHomeLabel->setPixmap (_2PM (Images::Texte::Bienvenue));
 }
 
 void App::introductionCliked()
 {
     manager->validate (ButManager::Introduction);
     _current = Page::Introduction;
+    
+    ui->HomeScrollArea->verticalScrollBar()->setValue (0);
     
     resetButton();
     
@@ -353,6 +358,8 @@ void App::conclusionCliked()
         manager->validate (ButManager::Conclusion);
         _current = Page::Conclusion;
         
+        ui->HomeScrollArea->verticalScrollBar()->setValue (0);
+        
         resetButton();
         
         ui->StackedView->setCurrentIndex (0);
@@ -366,6 +373,8 @@ void App::conclusionCliked()
 void App::informationCliked()
 {
     _current = Page::Information;
+    
+    ui->HomeScrollArea->verticalScrollBar()->setValue (0);
     
     resetButton();
     
