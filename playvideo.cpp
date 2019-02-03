@@ -3,8 +3,9 @@
 
 PlayVideo::PlayVideo (QWidget* parent) : QWidget (parent), _forceClose (false), ui (new Ui::PlayVideo)
 {
+    setWindowFlags (Qt::WindowStaysOnTopHint);
+    
     ui->setupUi (this);
-    _dialog = new SonDialog (this);
     
     hide();
     
@@ -14,11 +15,11 @@ PlayVideo::PlayVideo (QWidget* parent) : QWidget (parent), _forceClose (false), 
     pal.setColor (QPalette::Window, Qt::black);
     pal.setColor (QPalette::Button, Qt::gray);
     pal.setColor (QPalette::Highlight, Qt::red);
+    pal.setColor (QPalette::Button, Qt::gray);
     setPalette (pal);
     
     ui->video->setAspectRatioMode (Qt::KeepAspectRatio);
-    ui->slider->setPalette (pal);
-    ui->sonBut->setPalette (pal);
+    ui->volumeSlider->setPalette (pal);
     ui->exitBut->setPalette (pal);
     
     _player = new QMediaPlayer (this, QMediaPlayer::StreamPlayback);
@@ -32,28 +33,9 @@ PlayVideo::PlayVideo (QWidget* parent) : QWidget (parent), _forceClose (false), 
     oldCursorPos = ui->stackedWidget->mapFromGlobal (QCursor::pos());
     timer->start (100);
     
-    connect (_player, &QMediaPlayer::durationChanged, ui->slider, &QSlider::setMaximum);
     connect (ui->playBut, &QPushButton::clicked, this, &PlayVideo::tooglePausePlay);
     connect (ui->exitBut, &QPushButton::clicked, this, &PlayVideo::closeMedia);
-    
-    connect (ui->sonBut, &QPushButton::clicked, [ = ] {
-    
-        if (_player->state() == QMediaPlayer::PlayingState)
-        {
-            _player->pause();
-            ui->playBut->setIcon (_2PM (Images::Icon::VideoPlay));
-            
-            setCursor (Qt::ArrowCursor);
-            ui->stackedWidget->setCurrentIndex (1);
-        }
-        
-        _dialog->exec();
-    });
-    
-    connect (_dialog, &SonDialog::sonChanged, [ = ] {
-        _player->setVolume (_dialog->getVolume());
-    });
-    
+    connect (ui->volumeSlider, &QSlider::valueChanged, _player, &QMediaPlayer::setVolume);
 }
 
 void PlayVideo::OpenMedia (QString location)
@@ -61,6 +43,8 @@ void PlayVideo::OpenMedia (QString location)
     setVisible (true);
     show();
     showFullScreen();
+    
+    ui->volumeSlider->setValue (50);
     
     grabKeyboard();
     
@@ -78,8 +62,6 @@ PlayVideo::~PlayVideo()
 
 void PlayVideo::UpdateInterface()
 {
-    updateSlider();
-    
     if (_player->state() != QMediaPlayer::PlayingState) {
         setCursor (Qt::ArrowCursor);
         ui->stackedWidget->setCurrentIndex (1);
@@ -90,19 +72,13 @@ void PlayVideo::UpdateInterface()
     QPoint cursorpos = ui->stackedWidget->mapFromGlobal (QCursor::pos());
     QPoint Diff = cursorpos - oldCursorPos;
     
-    if (zoneMouse.contains (cursorpos) || qSqrt (Diff.x()*Diff.x() + Diff.y()*Diff.y()) > 20) {
+    if (zoneMouse.contains (cursorpos) || Diff != QPoint (0, 0)) {
         setCursor (Qt::ArrowCursor);
         ui->stackedWidget->setCurrentIndex (1);
     }
     else {
         ui->stackedWidget->setCurrentIndex (0);
-        
-        if (Diff == QPoint (0, 0)) {
-            setCursor (Qt::BlankCursor);
-        }
-        else {
-            setCursor (Qt::ArrowCursor);
-        }
+        setCursor (Qt::BlankCursor);
     }
     
     oldCursorPos = cursorpos;
@@ -155,7 +131,6 @@ void PlayVideo::tooglePausePlay()
 void PlayVideo::closeMedia()
 {
     _player->stop();
-    ui->slider->setValue (0);
     
     setCursor (Qt::ArrowCursor);
     ui->stackedWidget->setCurrentIndex (1);
@@ -163,19 +138,6 @@ void PlayVideo::closeMedia()
     hide();
     releaseKeyboard();
     emit MediaEnd();
-}
-
-void PlayVideo::updateSlider()
-{
-    qint64 delta = qAbs (ui->slider->value() - _player->position());
-    
-    if (delta < 1000) {
-        ui->slider->setValue (static_cast<int> (_player->position()));
-    }
-    else {
-        _player->setPosition (ui->slider->value());
-    }
-    
 }
 
 void PlayVideo::forceClose()

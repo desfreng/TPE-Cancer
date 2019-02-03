@@ -1,5 +1,8 @@
 #include "app.h"
 #include <QApplication>
+#include <QMessageBox>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 
 #include "medias.h"
 
@@ -13,7 +16,7 @@ int main (int argc, char* argv[])
     QApplication a (argc, argv);
     
     App w;
-    w.show();
+    w.showFullScreen();
     
     return a.exec();
 }

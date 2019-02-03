@@ -11,6 +11,8 @@ App::~App()
 
 App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
 {
+    setWindowFlags (Qt::WindowStaysOnTopHint);
+    
     ui->setupUi (this);
     
     _videoPlayer = new PlayVideo;
@@ -23,7 +25,6 @@ App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
     overGauche->setFixedSize (125, 125);
     overGauche->setVisible (false);
     
-    showFullScreen();
     
     QPalette pal = palette();
     

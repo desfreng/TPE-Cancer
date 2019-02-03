@@ -8,7 +8,6 @@
 #include "medias.h"
 
 #include "Class/buttonoverlay.h"
-#include "Class/sondialog.h"
 
 namespace Ui {
 class PlayVideo;
@@ -28,7 +27,6 @@ class PlayVideo : public QWidget
     public slots:
         void UpdateInterface();
         void OpenMedia (QString location);
-        void updateSlider();
         void forceClose();
         
     protected:
@@ -48,7 +46,6 @@ class PlayVideo : public QWidget
         QTimer* timer;
         
         QPoint oldCursorPos;
-        SonDialog* _dialog;
 };
 
 #endif // PLAYVIDEO_H

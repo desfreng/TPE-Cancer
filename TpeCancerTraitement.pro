@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui multimedia multimediawidgets
+QT       += core gui multimedia multimediawidgets network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,16 +29,14 @@ SOURCES += \
         app.cpp \
         playvideo.cpp \
         Class/butmanager.cpp \
-        Class/buttonoverlay.cpp \
-        Class/sondialog.cpp
+        Class/buttonoverlay.cpp
 
 HEADERS += \
         app.h \
         playvideo.h \
         medias.h \
         Class/butmanager.h \
-        Class/buttonoverlay.h \
-        Class/sondialog.h
+        Class/buttonoverlay.h
 
 FORMS += \
         app.ui \
