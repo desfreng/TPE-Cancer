@@ -395,6 +395,73 @@
                <verstretch>1</verstretch>
               </sizepolicy>
              </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>252</red>
+                   <green>252</green>
+                   <blue>252</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>252</red>
+                   <green>252</green>
+                   <blue>252</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="autoFillBackground">
+              <bool>true</bool>
+             </property>
              <property name="frameShape">
               <enum>QFrame::NoFrame</enum>
              </property>
@@ -409,6 +476,43 @@
                 <width>1186</width>
                 <height>700</height>
                </rect>
+              </property>
+              <property name="palette">
+               <palette>
+                <active>
+                 <colorrole role="Base">
+                  <brush brushstyle="SolidPattern">
+                   <color alpha="255">
+                    <red>250</red>
+                    <green>250</green>
+                    <blue>250</blue>
+                   </color>
+                  </brush>
+                 </colorrole>
+                </active>
+                <inactive>
+                 <colorrole role="Base">
+                  <brush brushstyle="SolidPattern">
+                   <color alpha="255">
+                    <red>250</red>
+                    <green>250</green>
+                    <blue>250</blue>
+                   </color>
+                  </brush>
+                 </colorrole>
+                </inactive>
+                <disabled>
+                 <colorrole role="Base">
+                  <brush brushstyle="SolidPattern">
+                   <color alpha="255">
+                    <red>250</red>
+                    <green>250</green>
+                    <blue>250</blue>
+                   </color>
+                  </brush>
+                 </colorrole>
+                </disabled>
+               </palette>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_5">
                <property name="spacing">
@@ -428,6 +532,9 @@
                </property>
                <item>
                 <widget class="QLabel" name="TextHomeLabel">
+                 <property name="autoFillBackground">
+                  <bool>true</bool>
+                 </property>
                  <property name="text">
                   <string/>
                  </property>
@@ -858,6 +965,73 @@
                <height>16777215</height>
               </size>
              </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>252</red>
+                   <green>252</green>
+                   <blue>252</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>252</red>
+                   <green>252</green>
+                   <blue>252</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>250</red>
+                   <green>250</green>
+                   <blue>250</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="autoFillBackground">
+              <bool>true</bool>
+             </property>
              <property name="widgetResizable">
               <bool>true</bool>
              </property>
@@ -893,6 +1067,73 @@
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
+                 </property>
+                 <property name="palette">
+                  <palette>
+                   <active>
+                    <colorrole role="Base">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>252</red>
+                       <green>252</green>
+                       <blue>252</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Window">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>250</red>
+                       <green>250</green>
+                       <blue>250</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                   </active>
+                   <inactive>
+                    <colorrole role="Base">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>252</red>
+                       <green>252</green>
+                       <blue>252</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Window">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>250</red>
+                       <green>250</green>
+                       <blue>250</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                   </inactive>
+                   <disabled>
+                    <colorrole role="Base">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>250</red>
+                       <green>250</green>
+                       <blue>250</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Window">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>250</red>
+                       <green>250</green>
+                       <blue>250</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                   </disabled>
+                  </palette>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>true</bool>
                  </property>
                  <property name="text">
                   <string/>
