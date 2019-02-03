@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1336</width>
-    <height>751</height>
+    <width>1354</width>
+    <height>871</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -350,42 +350,27 @@
       <number>1</number>
      </property>
      <widget class="QWidget" name="Page1">
-      <layout class="QVBoxLayout" name="verticalLayout_6">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <spacer name="HomeSpacer1">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>0</width>
-           <height>0</height>
+           <width>20</width>
+           <height>10</height>
           </size>
          </property>
         </spacer>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="HomeLayout">
-         <property name="spacing">
-          <number>0</number>
-         </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <spacer name="Text1Spacer1">
+          <spacer name="Text1Spacer2">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -398,64 +383,17 @@
           </spacer>
          </item>
          <item>
-          <widget class="QLabel" name="LeftBarHome">
-           <property name="minimumSize">
-            <size>
-             <width>5</width>
-             <height>560</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>5</width>
-             <height>560</height>
-            </size>
-           </property>
-           <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="TextHomeLayout">
+          <layout class="QGridLayout" name="gridLayout_2">
            <property name="spacing">
             <number>0</number>
            </property>
-           <property name="sizeConstraint">
-            <enum>QLayout::SetNoConstraint</enum>
-           </property>
-           <item>
-            <widget class="QLabel" name="UpBarHome">
-             <property name="minimumSize">
-              <size>
-               <width>1200</width>
-               <height>5</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1200</width>
-               <height>5</height>
-              </size>
-             </property>
-             <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
-             </property>
-            </widget>
-           </item>
-           <item>
+           <item row="1" column="1">
             <widget class="QScrollArea" name="HomeScrollArea">
-             <property name="minimumSize">
-              <size>
-               <width>1200</width>
-               <height>550</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1200</width>
-               <height>550</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
              </property>
              <property name="frameShape">
               <enum>QFrame::NoFrame</enum>
@@ -502,11 +440,11 @@
              </widget>
             </widget>
            </item>
-           <item>
-            <widget class="QLabel" name="DownBarHome">
+           <item row="2" column="1">
+            <widget class="QLabel" name="HomeDown">
              <property name="minimumSize">
               <size>
-               <width>1200</width>
+               <width>0</width>
                <height>5</height>
               </size>
              </property>
@@ -517,33 +455,159 @@
               </size>
              </property>
              <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
+              <pixmap resource="ressources.qrc">:/Misc/|bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="HomeUp">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1200</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/|bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="HomeRight">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>560</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>560</height>
+              </size>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/_bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="HomeDownRight">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/downRight</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="HomeUpRight">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/upRight</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="HomeLeft">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>560</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>560</height>
+              </size>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/_bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="HomeDownLeft">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/downLeft</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="HomeUpLeft">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/upLeft</pixmap>
              </property>
             </widget>
            </item>
           </layout>
          </item>
          <item>
-          <widget class="QLabel" name="RightBarHome">
-           <property name="minimumSize">
-            <size>
-             <width>5</width>
-             <height>560</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>5</width>
-             <height>560</height>
-            </size>
-           </property>
-           <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="Text1Spacer2">
+          <spacer name="Text1Spacer1">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -564,8 +628,8 @@
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>0</width>
-           <height>0</height>
+           <width>20</width>
+           <height>20</height>
           </size>
          </property>
         </spacer>
@@ -574,21 +638,6 @@
      </widget>
      <widget class="QWidget" name="Page2">
       <layout class="QVBoxLayout" name="verticalLayout">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
        <item>
         <layout class="QHBoxLayout" name="Text2Layout">
          <property name="spacing">
@@ -747,7 +796,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>:/Others/midBar</pixmap>
+            <pixmap resource="ressources.qrc">:/Misc/middleBar</pixmap>
            </property>
           </widget>
          </item>
@@ -768,9 +817,6 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
-         <property name="spacing">
-          <number>0</number>
-         </property>
          <item>
           <spacer name="NotesSpacer1">
            <property name="orientation">
@@ -781,76 +827,35 @@
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>10</width>
-             <height>10</height>
+             <width>13</width>
+             <height>13</height>
             </size>
            </property>
           </spacer>
          </item>
          <item>
-          <widget class="QLabel" name="LeftBar">
-           <property name="minimumSize">
-            <size>
-             <width>5</width>
-             <height>290</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>5</width>
-             <height>290</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <layout class="QGridLayout" name="gridLayout">
            <property name="spacing">
             <number>0</number>
            </property>
-           <property name="sizeConstraint">
-            <enum>QLayout::SetNoConstraint</enum>
-           </property>
-           <item>
-            <widget class="QLabel" name="UpBar">
-             <property name="minimumSize">
-              <size>
-               <width>1200</width>
-               <height>5</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1200</width>
-               <height>5</height>
-              </size>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
-             </property>
-            </widget>
-           </item>
-           <item>
+           <item row="2" column="1">
             <widget class="QScrollArea" name="scrollArea">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
                <width>1200</width>
-               <height>280</height>
+               <height>200</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>1200</width>
-               <height>280</height>
+               <height>16777215</height>
               </size>
              </property>
              <property name="widgetResizable">
@@ -860,7 +865,7 @@
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>-120</y>
+                <y>0</y>
                 <width>1184</width>
                 <height>1720</height>
                </rect>
@@ -883,11 +888,20 @@
                </property>
                <item>
                 <widget class="QLabel" name="ComplementLabel">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="text">
                   <string/>
                  </property>
                  <property name="pixmap">
                   <pixmap resource="ressources.qrc">:/Complement/note1</pixmap>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
                  </property>
                 </widget>
                </item>
@@ -895,14 +909,8 @@
              </widget>
             </widget>
            </item>
-           <item>
+           <item row="3" column="1">
             <widget class="QLabel" name="DownBar">
-             <property name="minimumSize">
-              <size>
-               <width>1200</width>
-               <height>5</height>
-              </size>
-             </property>
              <property name="maximumSize">
               <size>
                <width>1200</width>
@@ -913,33 +921,147 @@
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="ressources.qrc">:/Misc/horizontalbar</pixmap>
+              <pixmap resource="ressources.qrc">:/Misc/|bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="RightBar">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/_bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="LeftBar">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/_bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="UpBar">
+             <property name="maximumSize">
+              <size>
+               <width>1200</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/|bar</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="UpRight">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/upRight</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="DownRight">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/downRight</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="DownLeft">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/downLeft</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="upLeft">
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="ressources.qrc">:/Misc/upLeft</pixmap>
              </property>
             </widget>
            </item>
           </layout>
-         </item>
-         <item>
-          <widget class="QLabel" name="RightBar">
-           <property name="minimumSize">
-            <size>
-             <width>5</width>
-             <height>290</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>5</width>
-             <height>290</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap resource="ressources.qrc">:/Misc/verticalbar</pixmap>
-           </property>
-          </widget>
          </item>
          <item>
           <spacer name="NotesSpacer2">
@@ -951,8 +1073,8 @@
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>10</width>
-             <height>10</height>
+             <width>13</width>
+             <height>13</height>
             </size>
            </property>
           </spacer>

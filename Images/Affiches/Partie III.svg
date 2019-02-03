@@ -34,21 +34,21 @@
   <defs
      id="defs39" />
   <sodipodi:namedview
-     pagecolor="#1c4587"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      id="namedview37"
      showgrid="false"
-     inkscape:zoom="1.0124869"
-     inkscape:cx="403.40947"
-     inkscape:cy="137.69426"
+     inkscape:zoom="0.81176928"
+     inkscape:cx="328.26647"
+     inkscape:cy="65.128863"
      inkscape:window-x="0"
      inkscape:window-y="42"
      inkscape:window-maximized="1"
@@ -61,6 +61,10 @@
        inkscape:connector-curvature="0"
        style="clip-rule:nonzero" />
   </clipPath>
+  <path
+     style="fill:#1c4587;fill-opacity:1;stroke:none;stroke-width:1.62657189;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 0,0 H 850 V 300 H 0 Z"
+     id="rect831" />
   <path
      style="fill:#000000;fill-opacity:0;fill-rule:evenodd"
      inkscape:connector-curvature="0"

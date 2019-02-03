@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QScrollBar>
 #include <QMessageBox>
+#include <QResizeEvent>
 
 #include "medias.h"
 #include "Class/butmanager.h"
@@ -59,6 +60,7 @@ class App : public QWidget
     private:
         void updateOverlays();
         void initVideo();
+        void updateSizes();
         
         void launchVideo (ButManager::Module video);
         

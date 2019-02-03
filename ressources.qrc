@@ -56,7 +56,12 @@
         <file alias="iconson">Images/Icons/SonIcon.svg</file>
     </qresource>
     <qresource prefix="/Misc">
-        <file alias="horizontalbar">Images/Misc/horizontalBar.png</file>
-        <file alias="verticalbar">Images/Misc/verticalBar.png</file>
+        <file alias="downLeft">Images/Misc/DownLeft.svg</file>
+        <file alias="downRight">Images/Misc/DownRight.svg</file>
+        <file alias="|bar">Images/Misc/horizontalBar.svg</file>
+        <file alias="middleBar">Images/Misc/middeBar.svg</file>
+        <file alias="upLeft">Images/Misc/UpLeft.svg</file>
+        <file alias="upRight">Images/Misc/UpRight.svg</file>
+        <file alias="_bar">Images/Misc/verticalBar.svg</file>
     </qresource>
 </RCC>

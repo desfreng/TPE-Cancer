@@ -72,8 +72,38 @@ App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
     homeCliked();
 }
 
+void App::updateSizes()
+{
+    int heightNotes = ui->scrollArea->height();
+    ui->RightBar->setMaximumSize (5, heightNotes);
+    ui->RightBar->setFixedSize (5, heightNotes);
+    ui->LeftBar->setMaximumSize (5, heightNotes);
+    ui->LeftBar->setFixedSize (5, heightNotes);
+    
+    int widthNotes = ui->scrollArea->width();
+    ui->UpBar->setMaximumSize (widthNotes, 5);
+    ui->UpBar->setFixedSize (widthNotes, 5);
+    ui->DownBar->setMaximumSize (widthNotes, 5);
+    ui->DownBar->setFixedSize (widthNotes, 5);
+    
+    
+    int heightHome = ui->HomeScrollArea->height();
+    ui->HomeRight->setMaximumSize (5, heightHome);
+    ui->HomeRight->setFixedSize (5, heightHome);
+    ui->HomeLeft->setMaximumSize (5, heightHome);
+    ui->HomeLeft->setFixedSize (5, heightHome);
+    
+    int widthHome = ui->HomeScrollArea->width();
+    ui->HomeUp->setMaximumSize (widthHome, 5);
+    ui->HomeUp->setFixedSize (widthHome, 5);
+    ui->HomeDown->setMaximumSize (widthHome, 5);
+    ui->HomeDown->setFixedSize (widthHome, 5);
+}
+
 void App::updateOverlays()
 {
+    updateSizes();
+    
     QRect MiddleLabelRect = ui->Text2Label->rect();
     QPoint cursorpos = ui->Text2Label->mapFromGlobal (QCursor::pos());
     QPoint RectPos = ui->Text2Label->mapTo (this, ui->Text2Label->rect().topLeft());

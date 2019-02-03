@@ -128,6 +128,9 @@ void PlayVideo::keyPressEvent (QKeyEvent* event)
     if (event->key() == Qt::Key_Space) {
         tooglePausePlay();
     }
+    else if (event->key() == Qt::Key_Escape) {
+        closeMedia();
+    }
 }
 
 void PlayVideo::tooglePausePlay()
