@@ -14,7 +14,7 @@
    viewBox="0 0 26.458333 10.583335"
    version="1.1"
    id="svg947"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="Partie1.svg">
   <defs
      id="defs941" />
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1197266"
-     inkscape:cx="88.738886"
+     inkscape:cx="-74.247329"
      inkscape:cy="-111.78087"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -37,9 +37,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="0"
-     inkscape:window-y="42"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata944">
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -61,25 +61,44 @@
     <g
        transform="translate(23.872033,-164.51287)"
        id="g1144">
-      <rect
-         y="273.45209"
-         x="0.26457727"
-         height="10.05418"
-         width="25.92918"
-         id="rect10-1"
-         style="fill:#cfd8dc;fill-opacity:1;stroke:#073762;stroke-width:0.52915454;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
+      <path
+         style="fill:#cfd8dc;fill-opacity:1;stroke:#073762;stroke-width:0.52915454;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 0.26457727,273.45209 H 26.193757 v 10.05418 H 0.26457727 Z"
+         id="rect10-1" />
+      <g
+         aria-label="Partie I"
          transform="scale(0.97916858,1.0212746)"
-         id="text819-2"
-         y="274.18869"
-         x="6.9541936"
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;line-height:1.25;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27272838"
-         xml:space="preserve"><tspan
+         id="text819-2">
+        <path
+           d="m 7.2957304,271.12362 h 1.0640183 q 1.0683971,0 1.0683971,0.98958 0,0.50792 -0.2758566,0.75751 -0.2758567,0.24958 -0.7881618,0.24958 H 7.8124142 v 1.0684 H 7.2957304 Z m 1.0070955,1.56318 q 0.3065074,0 0.4553824,-0.13573 0.1532536,-0.14012 0.1532536,-0.42912 0,-0.29337 -0.1532536,-0.42911 -0.148875,-0.13573 -0.4641397,-0.13573 H 7.8124142 v 1.12969 z"
            style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.27272838"
-           y="274.18869"
-           x="6.9541936"
-           id="tspan817-2"
-           sodipodi:role="line">Partie I</tspan></text>
+           id="path12" />
+        <path
+           d="m 10.208508,274.23248 q -0.2802354,0 -0.4641398,-0.17515 -0.1795257,-0.17953 -0.1795257,-0.46852 0,-0.28461 0.2014191,-0.45538 0.2014191,-0.17077 0.4816544,-0.24083 0.284614,-0.0744 0.564849,-0.0832 -0.0044,-0.22769 -0.100709,-0.31527 -0.09633,-0.0919 -0.319644,-0.0919 -0.140117,0 -0.280235,0.0438 -0.135739,0.0394 -0.3065073,0.13136 l -0.052544,-0.39846 q 0.3678085,-0.20142 0.7750255,-0.20142 0.394081,0 0.586743,0.21893 0.192662,0.21456 0.192662,0.71373 v 0.53857 q 0,0.17077 0.01314,0.24959 0.01751,0.0744 0.05692,0.10509 0.04379,0.0307 0.140118,0.0307 h 0.0613 l -0.05692,0.39846 h -0.135739 q -0.210177,0 -0.328401,-0.0701 -0.113845,-0.0701 -0.183904,-0.2058 -0.113846,0.12698 -0.288993,0.20142 -0.175147,0.0744 -0.376566,0.0744 z m 0.175147,-0.38095 q 0.109467,0 0.227691,-0.0525 0.122603,-0.0569 0.205798,-0.15326 v -0.50354 q -0.337158,0.0131 -0.542956,0.11822 -0.201419,0.10509 -0.201419,0.30651 0,0.28461 0.310886,0.28461 z"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.27272838"
+           id="path14" />
+        <path
+           d="m 11.873431,272.01687 h 0.442246 l 0.02627,0.27585 q 0.118224,-0.14449 0.271478,-0.23207 0.153254,-0.0876 0.319644,-0.0876 0.04379,0 0.09633,0.009 l -0.03941,0.49917 q -0.07006,-0.0219 -0.166389,-0.0219 -0.144497,0 -0.271478,0.0701 -0.126982,0.0657 -0.179526,0.15763 v 1.50189 h -0.499169 z"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.27272838"
+           id="path16" />
+        <path
+           d="m 14.015562,274.23248 q -0.284614,0 -0.433489,-0.16201 -0.144497,-0.16202 -0.144497,-0.38971 v -1.26981 h -0.3284 l 0.04379,-0.39408 h 0.284614 v -0.49917 l 0.490412,-0.0525 v 0.55172 h 0.512305 v 0.39408 h -0.512305 v 1.04212 q 0,0.19266 0.02189,0.2671 0.02189,0.0701 0.09195,0.0919 0.07444,0.0219 0.26272,0.0219 h 0.131361 l -0.04379,0.39846 z"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.27272838"
+           id="path18" />
+        <path
+           d="m 14.789698,271.12362 h 0.490412 v 0.50354 h -0.490412 z m 0,0.89325 h 0.490412 v 2.17182 h -0.490412 z"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.27272838"
+           id="path20" />
+        <path
+           d="m 16.84535,274.23248 q -0.376567,0 -0.643666,-0.15326 -0.26272,-0.15325 -0.398459,-0.41159 -0.135739,-0.26272 -0.135739,-0.58237 0,-0.3065 0.122603,-0.55609 0.126981,-0.25396 0.367808,-0.40284 0.245206,-0.14887 0.573607,-0.14887 0.288993,0 0.499169,0.1226 0.214555,0.11823 0.324022,0.3284 0.113846,0.21018 0.113846,0.48166 0,0.14011 -0.03065,0.2671 h -1.462478 q 0.03941,0.33715 0.23207,0.49041 0.19704,0.15325 0.486033,0.15325 0.354673,0 0.643665,-0.16201 l 0.03503,0.40722 q -0.33278,0.16639 -0.72686,0.16639 z m 0.324022,-1.38804 q 0,-0.19267 -0.109467,-0.32403 -0.109467,-0.13136 -0.33278,-0.13136 -0.424731,0 -0.534198,0.45539 z"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.27272838"
+           id="path22" />
+        <path
+           d="m 19.114735,271.12362 h 0.507927 v 3.06507 h -0.507927 z"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.37867641px;font-family:Cabin;-inkscape-font-specification:'Cabin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.27272838"
+           id="path24" />
+      </g>
     </g>
   </g>
 </svg>
