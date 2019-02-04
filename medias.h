@@ -70,16 +70,16 @@ const QString VideoPlay = ":/Icon/videoplay";
 namespace Videos {
 const QString VideoTest = "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4";
 
-const QString CancerEtAdn = "https://drive.google.com/uc?export=download&id=1O8nLIlQ0pvfVgBaClT8xQtZbHhevprxO";
+const QString CancerEtAdn = "https://drive.google.com/uc?export=download&id=1jElIxwp8IEjy9sWoz5aySdYbuolleX9g";
 
-const QString Chimiotherapie = "https://drive.google.com/uc?export=download&id=1QWyDYBeJ29I33u0MlJcLY5WBGRWa4LPM";
-const QString Radiotherapie = "https://drive.google.com/uc?export=download&id=1I5gi7kVPARbxFaVmkaRUuDwvtWmXS3PD";
+const QString Chimiotherapie = "https://drive.google.com/uc?export=download&id=1hb21jfXJVQb3PjGIzLRiDTW46f27LZ15";
+const QString Radiotherapie = "https://drive.google.com/uc?export=download&id=1bKmIQtNNmLS0zq6ynnaRrleE9emw8MFe";
 
-const QString PourquoiIons = "https://drive.google.com/uc?export=download&id=1EFTQrJo7D0IS9gCs7BHA5c4J_H45ZUs7";
-const QString PorductionParticule = "https://drive.google.com/uc?export=download&id=1OzEqhfpliHSKukbVE-AzI7002CSMxIMz";
+const QString PourquoiIons = "https://drive.google.com/uc?export=download&id=1gRg7-bwMi_Vpi3SBc8DY59OOlSSo-QBN";
+const QString PorductionParticule = "https://drive.google.com/uc?export=download&id=1XH111fBHGCllqrDtpin7WNIrG_xmpCVr";
 
-const QString Experience = "https://drive.google.com/uc?export=download&id=1rbGhtR7kYGFOx4Zou0G6G1C7Y81oPQXZ";
-const QString Differences = "https://drive.google.com/uc?export=download&id=1N4SEQ5RKe5Gnda128AxRsLyEbM-iAocL";
+const QString Experience = "https://drive.google.com/uc?export=download&id=1a-VHdEUo-XSMG2X52SfdQGjYOcOam_JB";
+const QString Differences = "https://drive.google.com/uc?export=download&id=1Hnv0oVe6p9BSOxFWyrs8zQv_X6fK9TJA";
 
 }
 #endif // IMAGES_H
