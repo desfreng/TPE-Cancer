@@ -69,6 +69,42 @@ App::App (QWidget* parent) : QWidget (parent), ui (new Ui::App)
     connect (_videoPlayer, &PlayVideo::MediaEnd, [ = ] {
         show();
         showFullScreen();
+        
+        switch (_current)
+        {
+            case Page::Introduction:
+                introductionCliked();
+                break;
+                
+            case Page::Conclusion:
+                conclusionCliked();
+                break;
+                
+            case Page::Information:
+                informationCliked();
+                break;
+                
+            case Page::Home:
+                homeCliked();
+                break;
+                
+            case Page::Partie1:
+                Partie1Cliked();
+                break;
+                
+            case Page::Partie2:
+                Partie2Cliked();
+                break;
+                
+            case Page::Partie3:
+                Partie3Cliked();
+                break;
+                
+            case Page::Partie4:
+                Partie4Cliked();
+                break;
+        }
+        
     });
     
     homeCliked();
@@ -112,6 +148,11 @@ void App::updateOverlays()
     
     overDroite->setVisible (false);
     overGauche->setVisible (false);
+    ButManager::Module video2SeeGauche, video2SeeDroite;
+    
+    QRect Temp = MiddleLabelRect;
+    Temp.setWidth (MiddleLabelRect.width() / 2);
+    
     
     switch (_current) {
         case Page::Introduction:
@@ -121,63 +162,56 @@ void App::updateOverlays()
             return;
             
         case Page::Partie1:
-            if (MiddleLabelRect.contains (cursorpos)) {
-                overGauche->move (RectPos + QPoint (425 - overGauche->width() / 2, 150 - overGauche->height() / 2));
-                overGauche->setVisible (manager->isEnable (ButManager::CancerEtAdn));
-            }
+            overGauche->move (RectPos + QPoint (425 - overGauche->width() / 2, 150 - overGauche->height() / 2));
+            video2SeeGauche = ButManager::CancerEtAdn;
             
+            overGauche->setVisible ((manager->canSee (video2SeeGauche) && ! manager->haveSeen (video2SeeGauche)) ||
+                                    (manager->haveSeen (video2SeeGauche) && MiddleLabelRect.contains (cursorpos)));
+                                    
             break;
             
         case Page::Partie2:
-        case Page::Partie3:
-        case Page::Partie4:
-        
-            QRect Temp = MiddleLabelRect;
-            Temp.setWidth (MiddleLabelRect.width() / 2);
+            overGauche->move (RectPos + QPoint (212 - overGauche->width() / 2, 150 - overGauche->height() / 2));
+            overDroite->move (RectPos + QPoint (637 - overGauche->width() / 2, 150 - overGauche->height() / 2));
             
-            if (Temp.contains (cursorpos)) {
-                overGauche->move (RectPos + QPoint (212 - overGauche->width() / 2, 150 - overGauche->height() / 2));
-                
-                switch (_current) {
-                    case Page::Partie2:
-                        overGauche->setVisible (manager->isEnable (ButManager::Chimiotherapie));
-                        break;
-                        
-                    case Page::Partie3:
-                        overGauche->setVisible (manager->isEnable (ButManager::PourquoiIons));
-                        break;
-                        
-                    case Page::Partie4:
-                        overGauche->setVisible (manager->isEnable (ButManager::Experience));
-                        break;
-                        
-                    default :
-                        break;
-                }
-            }
-            else if (MiddleLabelRect.contains (cursorpos) && !Temp.contains (cursorpos)) {
-            
-                overDroite->move (RectPos + QPoint (637 - overGauche->width() / 2, 150 - overGauche->height() / 2));
-                
-                switch (_current) {
-                    case Page::Partie2:
-                        overDroite->setVisible (manager->isEnable (ButManager::Radiotherapie));
-                        break;
-                        
-                    case Page::Partie3:
-                        overDroite->setVisible (manager->isEnable (ButManager::ProductionParticules));
-                        break;
-                        
-                    case Page::Partie4:
-                        overDroite->setVisible (manager->isEnable (ButManager::Differences));
-                        break;
-                        
-                    default :
-                        break;
-                }
-            }
-            
+            video2SeeGauche = ButManager::Chimiotherapie;
+            overGauche->setVisible ((manager->canSee (video2SeeGauche) && ! manager->haveSeen (video2SeeGauche)) ||
+                                    (manager->haveSeen (video2SeeGauche) && Temp.contains (cursorpos)));
+                                    
+            video2SeeDroite = ButManager::Radiotherapie;
+            overDroite->setVisible ((manager->canSee (video2SeeDroite) && ! manager->haveSeen (video2SeeDroite)) ||
+                                    (manager->haveSeen (video2SeeDroite) && (MiddleLabelRect.contains (cursorpos) && !Temp.contains (cursorpos))));
+                                    
             break;
+            
+        case Page::Partie3:
+            overGauche->move (RectPos + QPoint (212 - overGauche->width() / 2, 150 - overGauche->height() / 2));
+            overDroite->move (RectPos + QPoint (637 - overGauche->width() / 2, 150 - overGauche->height() / 2));
+            
+            video2SeeGauche = ButManager::PourquoiIons;
+            overGauche->setVisible ((manager->canSee (video2SeeGauche) && ! manager->haveSeen (video2SeeGauche)) ||
+                                    (manager->haveSeen (video2SeeGauche) && Temp.contains (cursorpos)));
+                                    
+            video2SeeDroite = ButManager::ProductionParticules;
+            overDroite->setVisible ((manager->canSee (video2SeeDroite) && ! manager->haveSeen (video2SeeDroite)) ||
+                                    (manager->haveSeen (video2SeeDroite) && (MiddleLabelRect.contains (cursorpos) && !Temp.contains (cursorpos))));
+                                    
+            break;
+            
+        case Page::Partie4:
+            overGauche->move (RectPos + QPoint (212 - overGauche->width() / 2, 150 - overGauche->height() / 2));
+            overDroite->move (RectPos + QPoint (637 - overGauche->width() / 2, 150 - overGauche->height() / 2));
+            
+            video2SeeGauche = ButManager::Experience;
+            overGauche->setVisible ((manager->canSee (video2SeeGauche) && ! manager->haveSeen (video2SeeGauche)) ||
+                                    (manager->haveSeen (video2SeeGauche) && Temp.contains (cursorpos)));
+                                    
+            video2SeeDroite = ButManager::Differences;
+            overDroite->setVisible ((manager->canSee (video2SeeDroite) && ! manager->haveSeen (video2SeeDroite)) ||
+                                    (manager->haveSeen (video2SeeDroite) && (MiddleLabelRect.contains (cursorpos) && !Temp.contains (cursorpos))));
+                                    
+            break;
+            
     }
 }
 
@@ -186,35 +220,35 @@ void App::resetButton()
     ui->IntroBut->setIcon (_2PM (Images::ButtonNormal::Introduction));
     ui->InfoBut->setIcon (_2PM (Images::ButtonNormal::Information));
     
-    if (manager->isEnable (ButManager::Partie1)) {
+    if (manager->canSee (ButManager::Partie1)) {
         ui->P1But->setIcon (_2PM (Images::ButtonNormal::Partie1));
     }
     else {
         ui->P1But->setIcon (_2PM (Images::ButtonForbidden::Partie1));
     }
     
-    if (manager->isEnable (ButManager::Partie2)) {
+    if (manager->canSee (ButManager::Partie2)) {
         ui->P2But->setIcon (_2PM (Images::ButtonNormal::Partie2));
     }
     else {
         ui->P2But->setIcon (_2PM (Images::ButtonForbidden::Partie2));
     }
     
-    if (manager->isEnable (ButManager::Partie3)) {
+    if (manager->canSee (ButManager::Partie3)) {
         ui->P3But->setIcon (_2PM (Images::ButtonNormal::Partie3));
     }
     else {
         ui->P3But->setIcon (_2PM (Images::ButtonForbidden::Partie3));
     }
     
-    if (manager->isEnable (ButManager::Partie4)) {
+    if (manager->canSee (ButManager::Partie4)) {
         ui->P4But->setIcon (_2PM (Images::ButtonNormal::Partie4));
     }
     else {
         ui->P4But->setIcon (_2PM (Images::ButtonForbidden::Partie4));
     }
     
-    if (manager->isEnable (ButManager::Conclusion)) {
+    if (manager->canSee (ButManager::Conclusion)) {
         ui->ConcluBut->setIcon (_2PM (Images::ButtonNormal::Conclusion));
     }
     else {
@@ -282,7 +316,7 @@ void App::introductionCliked()
 
 void App::Partie1Cliked()
 {
-    if (manager->isEnable (ButManager::Partie1)) {
+    if (manager->canSee (ButManager::Partie1)) {
         manager->validate (ButManager::Partie1);
         _current = Page::Partie1;
         
@@ -300,7 +334,7 @@ void App::Partie1Cliked()
 
 void App::Partie2Cliked()
 {
-    if (manager->isEnable (ButManager::Partie2)) {
+    if (manager->canSee (ButManager::Partie2)) {
         manager->validate (ButManager::Partie2);
         _current = Page::Partie2;
         
@@ -318,7 +352,7 @@ void App::Partie2Cliked()
 
 void App::Partie3Cliked()
 {
-    if (manager->isEnable (ButManager::Partie3)) {
+    if (manager->canSee (ButManager::Partie3)) {
         manager->validate (ButManager::Partie3);
         _current = Page::Partie3;
         
@@ -336,7 +370,7 @@ void App::Partie3Cliked()
 
 void App::Partie4Cliked()
 {
-    if (manager->isEnable (ButManager::Partie4)) {
+    if (manager->canSee (ButManager::Partie4)) {
         manager->validate (ButManager::Partie4);
         _current = Page::Partie4;
         
@@ -354,7 +388,7 @@ void App::Partie4Cliked()
 
 void App::conclusionCliked()
 {
-    if (manager->isEnable (ButManager::Conclusion)) {
+    if (manager->canSee (ButManager::Conclusion)) {
         manager->validate (ButManager::Conclusion);
         _current = Page::Conclusion;
         
@@ -448,7 +482,7 @@ void App::initVideo()
             return;
             
         case Page::Partie1:
-            if (manager->isEnable (ButManager::CancerEtAdn)) {
+            if (manager->canSee (ButManager::CancerEtAdn)) {
                 manager->validate (ButManager::CancerEtAdn);
                 launchVideo (ButManager::CancerEtAdn);
             }
@@ -461,7 +495,7 @@ void App::initVideo()
         case Page::Partie2:
             if (_butCliked == OverlayBut::Droite) {
             
-                if (manager->isEnable (ButManager::Radiotherapie)) {
+                if (manager->canSee (ButManager::Radiotherapie)) {
                     manager->validate (ButManager::Radiotherapie);
                     launchVideo (ButManager::Radiotherapie);
                 }
@@ -472,7 +506,7 @@ void App::initVideo()
             }
             else if (_butCliked == OverlayBut::Gauche) {
             
-                if (manager->isEnable (ButManager::Chimiotherapie)) {
+                if (manager->canSee (ButManager::Chimiotherapie)) {
                     manager->validate (ButManager::Chimiotherapie);
                     launchVideo (ButManager::Chimiotherapie);
                 }
@@ -487,7 +521,7 @@ void App::initVideo()
         case Page::Partie3:
             if (_butCliked == OverlayBut::Droite) {
             
-                if (manager->isEnable (ButManager::ProductionParticules)) {
+                if (manager->canSee (ButManager::ProductionParticules)) {
                     manager->validate (ButManager::ProductionParticules);
                     launchVideo (ButManager::ProductionParticules);
                 }
@@ -498,7 +532,7 @@ void App::initVideo()
             }
             else if (_butCliked == OverlayBut::Gauche) {
             
-                if (manager->isEnable (ButManager::PourquoiIons)) {
+                if (manager->canSee (ButManager::PourquoiIons)) {
                     manager->validate (ButManager::PourquoiIons);
                     launchVideo (ButManager::PourquoiIons);
                 }
@@ -513,7 +547,7 @@ void App::initVideo()
         case Page::Partie4:
             if (_butCliked == OverlayBut::Droite) {
             
-                if (manager->isEnable (ButManager::Differences)) {
+                if (manager->canSee (ButManager::Differences)) {
                     manager->validate (ButManager::Differences);
                     launchVideo (ButManager::Differences);
                 }
@@ -524,7 +558,7 @@ void App::initVideo()
             }
             else if (_butCliked == OverlayBut::Gauche) {
             
-                if (manager->isEnable (ButManager::Experience)) {
+                if (manager->canSee (ButManager::Experience)) {
                     manager->validate (ButManager::Experience);
                     launchVideo (ButManager::Experience);
                 }

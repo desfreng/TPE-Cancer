@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QMediaPlayer>
 #include <QTimer>
+#include <QMovie>
+#include <QMessageBox>
 
 #include "medias.h"
 
@@ -45,7 +47,10 @@ class PlayVideo : public QWidget
         QMediaPlayer* _player;
         QTimer* timer;
         
+        QMovie* movie;
+        
         QPoint oldCursorPos;
+        QString _mediaString;
 };
 
 #endif // PLAYVIDEO_H

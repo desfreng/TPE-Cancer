@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="Loader.svg"
+   inkscape:export-filename="/home/gabriel/Bureau/TPE-Cancer/Logo.svg.png"
+   inkscape:export-xdpi="384"
+   inkscape:export-ydpi="384">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4775">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4771"
+         id="use4777"
+         width="100%"
+         height="100%"
+         transform="translate(-32.375707,70.147364)" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="187.51234"
+     inkscape:cy="268.57595"
+     inkscape:document-units="px"
+     inkscape:current-layer="text4754"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1292"
+     inkscape:window-height="1005"
+     inkscape:window-x="297"
+     inkscape:window-y="46"
+     inkscape:window-maximized="0"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.375707,-20.968258)">
+    <g
+       id="g4771"
+       inkscape:label="Clip"
+       transform="translate(32.375707,-70.147364)">
+      <g
+         aria-label="TPE"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#0f173a;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="text4754"
+         transform="matrix(1.1295902,0,0,1.1594169,4.8165278,-50.937449)">
+        <path
+           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#979797;fill-opacity:1;stroke:none;stroke-width:0.15275168;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           d="m 73.226703,122.52113 a 60.002573,58.427526 0 0 0 -13.606696,1.61946 l 6.065173,22.04228 a 36.56407,35.604276 0 0 1 7.541523,-0.84072 z m 1.995934,0.0544 v 22.8491 a 36.56407,35.604276 0 0 1 7.40968,1.10907 l 6.069292,-22.05653 a 60.002573,58.427526 0 0 0 -13.478972,-1.90164 z m -17.521657,2.0425 a 60.002573,58.427526 0 0 0 -12.806486,4.92617 l 11.725659,19.77599 a 36.56407,35.604276 0 0 1 7.131351,-2.71472 z m 32.967723,0.41635 -6.06288,22.03246 a 36.56407,35.604276 0 0 1 6.761458,2.88634 l 11.693159,-19.72161 a 60.002573,58.427526 0 0 0 -12.391737,-5.19719 z m -47.477164,5.49408 a 60.002573,58.427526 0 0 0 -11.039444,8.07996 l 16.558024,16.12338 a 36.56407,35.604276 0 0 1 6.192432,-4.45232 z m 61.716971,0.73551 -11.724287,19.77421 a 36.56407,35.604276 0 0 1 5.667817,4.38678 l 16.5896,-16.15413 a 60.002573,58.427526 0 0 0 -10.53313,-8.00689 z m -74.206214,8.65991 a 60.002573,58.427526 0 0 0 -8.500121,10.65605 l 20.297654,11.41162 a 36.56407,35.604276 0 0 1 4.786125,-5.91933 z m 86.259194,0.93566 -16.56031,16.12561 a 36.56407,35.604276 0 0 1 4.28073,5.58323 l 20.27293,-11.39736 a 60.002573,58.427526 0 0 0 -7.99335,-10.31148 z m -95.744464,11.3929 a 60.002573,58.427526 0 0 0 -5.407337,12.4106 l 22.624565,5.90284 a 36.56407,35.604276 0 0 1 3.030069,-6.93033 z m 104.890514,0.76851 -20.32008,11.42411 a 36.56407,35.604276 0 0 1 2.67437,6.46138 l 22.61449,-5.90061 a 60.002573,58.427526 0 0 0 -4.96878,-11.98488 z M 15.291479,166.59943 a 60.002573,58.427526 0 0 0 -1.849903,13.24373 h 23.454983 a 36.56407,35.604276 0 0 1 1.029558,-7.33822 z m 116.325031,0.46716 -22.62274,5.90239 a 36.56407,35.604276 0 0 1 0.93479,6.87418 h 23.42203 a 60.002573,58.427526 0 0 0 -1.73408,-12.77657 z M 13.458056,182.03721 a 60.002573,58.427526 0 0 0 1.838916,13.17731 l 22.610835,-5.89972 a 36.56407,35.604276 0 0 1 -1.027726,-7.27759 z m 96.454024,0 a 36.56407,35.604276 0 0 1 -0.92426,6.93747 l 22.62274,5.90284 a 60.002573,58.427526 0 0 0 1.75651,-12.84031 z m -1.43286,8.87611 a 36.56407,35.604276 0 0 1 -2.75265,6.62409 l 20.27339,11.39736 a 60.002573,58.427526 0 0 0 5.13358,-12.11059 z m -69.99827,0.45379 -22.643337,5.90819 a 60.002573,58.427526 0 0 0 5.283278,12.27063 L 41.429988,198.1285 a 36.56407,35.604276 0 0 1 -2.949038,-6.76139 z m 66.25727,7.84059 a 36.56407,35.604276 0 0 1 -4.42448,5.77357 l 16.59282,16.15726 a 60.002573,58.427526 0 0 0 8.10825,-10.53124 z m -62.203139,0.79703 -20.252336,11.38577 a 60.002573,58.427526 0 0 0 8.355461,10.45769 l 16.536508,-16.10243 a 36.56407,35.604276 0 0 1 -4.639633,-5.74103 z m 56.428201,6.38784 a 36.56407,35.604276 0 0 1 -5.824378,4.51963 l 11.689956,19.71625 a 60.002573,58.427526 0 0 0 10.67734,-8.12721 z m -50.15703,0.83313 -16.590067,16.15459 a 60.002573,58.427526 0 0 0 10.916301,7.9244 l 11.703687,-19.739 a 36.56407,35.604276 0 0 1 -6.029921,-4.33999 z m 42.615048,4.64579 a 36.56407,35.604276 0 0 1 -6.85439,2.92824 l 6.076159,22.08105 a 60.002573,58.427526 0 0 0 12.497031,-5.24444 z m -34.722407,0.70208 -11.71788,19.76351 a 60.002573,58.427526 0 0 0 12.673732,4.96717 l 6.072952,-22.06901 a 36.56407,35.604276 0 0 1 -7.028804,-2.66167 z m 25.972337,2.7856 a 36.56407,35.604276 0 0 1 -7.448593,1.12243 v 22.7974 a 60.002573,58.427526 0 0 0 13.501861,-1.92125 z m -16.959041,0.36908 -6.057389,22.01331 a 60.002573,58.427526 0 0 0 13.571903,1.61991 v -22.82548 a 36.56407,35.604276 0 0 1 -7.514514,-0.80774 z"
+           id="path30-0"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/gabriel/Bureau/TPE-Cancer/path30-0.png"
+           inkscape:export-xdpi="384"
+           inkscape:export-ydpi="384" />
+      </g>
+    </g>
+  </g>
+</svg>

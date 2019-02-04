@@ -4,7 +4,7 @@
 PlayVideo::PlayVideo (QWidget* parent) : QWidget (parent), _forceClose (false), ui (new Ui::PlayVideo)
 {
     setWindowFlags (Qt::WindowStaysOnTopHint);
-    
+    _mediaString = "";
     ui->setupUi (this);
     
     hide();
@@ -21,11 +21,53 @@ PlayVideo::PlayVideo (QWidget* parent) : QWidget (parent), _forceClose (false), 
     ui->video->setAspectRatioMode (Qt::KeepAspectRatio);
     ui->volumeSlider->setPalette (pal);
     ui->exitBut->setPalette (pal);
+    ui->Loading->setPalette (pal);
     
     _player = new QMediaPlayer (this, QMediaPlayer::StreamPlayback);
     _player->setVideoOutput (ui->video);
     
+    movie = new QMovie (":/Misc/loader");
+    ui->Loading->setMovie (movie);
+    movie->start();
+    
     ui->stackedWidget->setCurrentIndex (1);
+    ui->VideoStacked->setCurrentIndex (0);
+    
+    connect (_player, QOverload<QMediaPlayer::Error>::of (&QMediaPlayer::error),
+    [ = ] (QMediaPlayer::Error error) {
+        switch (error) {
+            case QMediaPlayer::NoError:
+                return ;
+                
+            case QMediaPlayer::ServiceMissingError:
+            case QMediaPlayer::FormatError:
+                QMessageBox::information (this, "Lecture de la Video", "Une erreur est survenue lors de la lecture de la video. L'installation d'un pack de Codec Vidéo et Audio (tel que LAVFilters) peut résoudre ce problème\nErreur : " + QString (_player->errorString() + "\nCette video est disponible à l'adresse suivante : \n" + _mediaString));
+                closeMedia();
+                break;
+                
+            case QMediaPlayer::NetworkError:
+                QMessageBox::information (this, "Lecture de la Video", "Une erreur est survenue lors de la lecture de la video. Le lecteur n'arrive pas a accéder à internet, Verifier votre connection Internet\nErreur : " + QString (_player->errorString() + "\nCette video est disponible à l'adresse suivante : \n" + _mediaString));
+                closeMedia();
+                break;
+                
+            default:
+                QMessageBox::information (this, "Lecture de la Video", "Une erreur est survenue lors de la lecture de la video.\nErreur : " + QString (_player->errorString() + "\nCette video est disponible à l'adresse suivante : \n" + _mediaString));
+                closeMedia();
+        }
+        
+    });
+    
+    
+    connect (_player, &QMediaPlayer::mediaStatusChanged, this, [ = ]() {
+        if (_player->mediaStatus() == QMediaPlayer::StalledMedia) {
+            ui->VideoStacked->setCurrentIndex (0);
+            
+        }
+        else {
+            ui->VideoStacked->setCurrentIndex (1);
+        }
+    });
+    
     
     timer = new QTimer (this);
     connect (timer, &QTimer::timeout, this, &PlayVideo::UpdateInterface);
@@ -48,9 +90,12 @@ void PlayVideo::OpenMedia (QString location)
     
     grabKeyboard();
     
+    _mediaString = location;
+    
     _player->setMedia (QUrl (location));
     _player->setVolume (50);
     _player->play();
+    
     
     ui->playBut->setIcon (_2PM (Images::Icon::VideoPause));
 }
@@ -58,10 +103,13 @@ void PlayVideo::OpenMedia (QString location)
 PlayVideo::~PlayVideo()
 {
     delete ui;
+    delete movie;
 }
 
 void PlayVideo::UpdateInterface()
 {
+
+
     if (_player->state() != QMediaPlayer::PlayingState) {
         setCursor (Qt::ArrowCursor);
         ui->stackedWidget->setCurrentIndex (1);
@@ -145,3 +193,5 @@ void PlayVideo::forceClose()
     _forceClose = true;
     close();
 }
+
+

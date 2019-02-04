@@ -18,7 +18,7 @@ void ButManager::validate (Module mod)
     }
 }
 
-bool ButManager::isEnable (Module mod)
+bool ButManager::canSee (Module mod)
 {
     if (mod == Module::Introduction) {
         return true;
@@ -26,4 +26,9 @@ bool ButManager::isEnable (Module mod)
     else {
         return tab[mod - 1];
     }
+}
+
+bool ButManager::haveSeen (ButManager::Module mod)
+{
+    return tab[mod];
 }

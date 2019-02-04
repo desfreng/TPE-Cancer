@@ -33,7 +33,8 @@ class ButManager : public QObject
         ~ButManager();
         
         void validate (Module mod);
-        bool isEnable (Module mod);
+        bool canSee (Module mod);
+        bool haveSeen (Module mod);
         
     signals:
         void needUpdate();
