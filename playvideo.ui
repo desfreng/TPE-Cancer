@@ -36,6 +36,9 @@
       <number>0</number>
      </property>
      <widget class="QWidget" name="LoadingWidget">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <spacer name="verticalSpacer_4">
@@ -78,6 +81,9 @@
              <width>256</width>
              <height>256</height>
             </size>
+           </property>
+           <property name="autoFillBackground">
+            <bool>true</bool>
            </property>
            <property name="text">
             <string/>

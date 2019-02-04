@@ -22,7 +22,8 @@ PlayVideo::PlayVideo (QWidget* parent) : QWidget (parent), _forceClose (false), 
     ui->volumeSlider->setPalette (pal);
     ui->exitBut->setPalette (pal);
     ui->Loading->setPalette (pal);
-    
+    ui->VideoStacked->setPalette (pal);
+
     _player = new QMediaPlayer (this, QMediaPlayer::StreamPlayback);
     _player->setVideoOutput (ui->video);
     
