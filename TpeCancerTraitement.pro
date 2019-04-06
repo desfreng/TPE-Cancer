@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui multimedia multimediawidgets network
+QT       += core gui multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,7 +15,7 @@ TEMPLATE = app
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
-DEFINES += QT_DEPRECATED_WARNINGS #WITH_CODECS
+DEFINES += QT_DEPRECATED_WARNINGS
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -42,31 +42,7 @@ FORMS += \
         app.ui \
         playvideo.ui
 
-unix {
-    isEmpty(PREFIX):PREFIX = /usr
-    BINDIR = $$PREFIX/bin
-    DATADIR = $$PREFIX/share
-
-    target.path = $$BINDIR
-    icon.path = $$DATADIR/icons/hicolor/scalable/apps
-    desktop.path = $$DATADIR/applications
-
-    icon.files += Images/icon.svg
-    desktop.files += qastrologer.desktop
-    INSTALLS += target icon desktop
-}
 RC_FILE = icon.rc
-
-contains(DEFINES, WITH_CODECS) {
-
-RESOURCES += \
-        ressources-codec.qrc
-
-message("Compilation avec Codecs.")
-}else{
 
 RESOURCES += \
         ressources.qrc
-
-message("Compilation sans Codecs.")
-}
